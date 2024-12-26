@@ -16,25 +16,9 @@ NEW_SUB_URL = 'https://arxiv.org/list/cs.LG/new'
 
 # Keywords to search
 KEYWORD_LIST = [
-    "RL dynamic environment",
-    "sound field control",
-    "acoustic signal",
-    "indoor acoustics",
-    "speech RL",
-    "sound modeling",
-    "spatial audio RL",
-    "source localization RL",
-    "acoustic adaptation",
-    "sound manipulation",
-    "adaptive acoustics",
-    "sound field optimization",
-    "machine learning acoustics",
-    "acoustic scene RL",
-    "room acoustics RL",
-    "sound separation RL",
-    "room simulation",
-    "voice detection RL",
-    "signal reinforcement"
+    "time-series",
+    "reinforce",
+    "reverb"
 ]
 
 # Keywords to exclude
