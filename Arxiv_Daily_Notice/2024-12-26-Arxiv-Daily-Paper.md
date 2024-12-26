@@ -7,73 +7,73 @@ Auto update papers at about 2:30am UTC (10:30am Beijing time) every weekday.
 See `Usage.md` for instructions on how to personalize the repo. 
 
 
-Keyword list: ['time-series', 'reinforce', 'reverb']
+Keyword list: ['acoustic', 'reinforcement learning', 'reverb', 'meta', 'separate', 'reconstruction']
 
 
 Excluded: []
 
 
 ### Today: 6papers 
-#### Active Geospatial Search for Efficient Tenant Eviction Outreach
- - **Authors:** Anindya Sarkar, Alex DiChristofano, Sanmay Das, Patrick J. Fowler, Nathan Jacobs, Yevgeniy Vorobeychik
+#### CPFI-EIT: A CNN-PINN Framework for Full-Inverse Electrical Impedance Tomography on Non-Smooth Conductivity Distributions
+ - **Authors:** Yang Xuanxuan, Zhang Yangming, Chen Haofeng, Ma Gang, Wang Xiaojie
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Computers and Society (cs.CY)
- - **Arxiv link:** https://arxiv.org/abs/2412.17854
+Signal Processing (eess.SP); Machine Learning (cs.LG)
+ - **Arxiv link:** https://arxiv.org/abs/2412.17827
 
- - **Pdf link:** https://arxiv.org/pdf/2412.17854
+ - **Pdf link:** https://arxiv.org/pdf/2412.17827
 
  - **Abstract**
- Tenant evictions threaten housing stability and are a major concern for many cities. An open question concerns whether data-driven methods enhance outreach programs that target at-risk tenants to mitigate their risk of eviction. We propose a novel active geospatial search (AGS) modeling framework for this problem. AGS integrates property-level information in a search policy that identifies a sequence of rental units to canvas to both determine their eviction risk and provide support if needed. We propose a hierarchical reinforcement learning approach to learn a search policy for AGS that scales to large urban areas containing thousands of parcels, balancing exploration and exploitation and accounting for travel costs and a budget constraint. Crucially, the search policy adapts online to newly discovered information about evictions. Evaluation using eviction data for a large urban area demonstrates that the proposed framework and algorithmic approach are considerably more effective at sequentially identifying eviction cases than baseline methods.
-#### Trading Devil RL: Backdoor attack via Stock market, Bayesian Optimization and Reinforcement Learning
- - **Authors:** Orson Mengara
+ This paper introduces a hybrid learning framework that combines convolutional neural networks (CNNs) and physics-informed neural networks (PINNs) to address the challenging problem of full-inverse electrical impedance tomography (EIT). EIT is a noninvasive imaging technique that reconstructs the spatial distribution of internal conductivity based on boundary voltage measurements from injected currents. This method has applications across medical imaging, multiphase flow detection, and tactile sensing. However, solving EIT involves a nonlinear partial differential equation (PDE) derived from Maxwell's equations, posing significant computational challenges as an ill-posed inverse problem. Existing PINN approaches primarily address semi-inverse EIT, assuming full access to internal potential data, which limits practical applications in realistic, full-inverse scenarios. Our framework employs a forward CNN-based supervised network to map differential boundary voltage measurements to a discrete potential distribution under fixed Neumann boundary conditions, while an inverse PINN-based unsupervised network enforces PDE constraints for conductivity reconstruction. Instead of traditional automatic differentiation, we introduce discrete numerical differentiation to bridge the forward and inverse networks, effectively decoupling them, enhancing modularity, and reducing computational demands. We validate our framework under realistic conditions, using a 16-electrode setup and rigorous testing on complex conductivity distributions with sharp boundaries, without Gaussian smoothing. This approach demonstrates robust flexibility and improved applicability in full-inverse EIT, establishing a practical solution for real-world imaging challenges.
+#### Noisereduce: Domain General Noise Reduction for Time Series Signals
+ - **Authors:** Tim Sainburg, Asaf Zorea
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Computational Engineering, Finance, and Science (cs.CE); Computational Physics (physics.comp-ph); Physics and Society (physics.soc-ph)
- - **Arxiv link:** https://arxiv.org/abs/2412.17908
+Signal Processing (eess.SP); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2412.17851
 
- - **Pdf link:** https://arxiv.org/pdf/2412.17908
+ - **Pdf link:** https://arxiv.org/pdf/2412.17851
 
  - **Abstract**
- With the rapid development of generative artificial intelligence, particularly large language models, a number of sub-fields of deep learning have made significant progress and are now very useful in everyday applications. For example, well-known financial institutions simulate a wide range of scenarios for various models created by their research teams using reinforcement learning, both before production and after regular operations. In this work, we propose a backdoor attack that focuses solely on data poisoning. This particular backdoor attack is classified as an attack without prior consideration or trigger, and we name it FinanceLLMsBackRL. Our aim is to examine the potential effects of large language models that use reinforcement learning systems for text production or speech recognition, finance, physics, or the ecosystem of contemporary artificial intelligence models.
-#### VITRO: Vocabulary Inversion for Time-series Representation Optimization
- - **Authors:** Filippos Bellos, Nam H. Nguyen, Jason J. Corso
+ Extracting signals from noisy backgrounds is a fundamental problem in signal processing across a variety of domains. In this paper, we introduce Noisereduce, an algorithm for minimizing noise across a variety of domains, including speech, bioacoustics, neurophysiology, and seismology. Noisereduce uses spectral gating to estimate a frequency-domain mask that effectively separates signals from noise. It is fast, lightweight, requires no training data, and handles both stationary and non-stationary noise, making it both a versatile tool and a convenient baseline for comparison with domain-specific applications. We provide a detailed overview of Noisereduce and evaluate its performance on a variety of time-domain signals.
+#### EnhancePPG: Improving PPG-based Heart Rate Estimation with Self-Supervision and Augmentation
+ - **Authors:** Luca Benfenati, Sofia Belloni, Alessio Burrello, Panagiotis Kasnesis, Xiaying Wang, Luca Benini, Massimo Poncino, Enrico Macii, Daniele Jahier Pagliari
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Computation and Language (cs.CL)
- - **Arxiv link:** https://arxiv.org/abs/2412.17921
+Signal Processing (eess.SP); Machine Learning (cs.LG)
+ - **Arxiv link:** https://arxiv.org/abs/2412.17860
 
- - **Pdf link:** https://arxiv.org/pdf/2412.17921
+ - **Pdf link:** https://arxiv.org/pdf/2412.17860
 
  - **Abstract**
- Although LLMs have demonstrated remarkable capabilities in processing and generating textual data, their pre-trained vocabularies are ill-suited for capturing the nuanced temporal dynamics and patterns inherent in time series. The discrete, symbolic nature of natural language tokens, which these vocabularies are designed to represent, does not align well with the continuous, numerical nature of time series data. To address this fundamental limitation, we propose VITRO. Our method adapts textual inversion optimization from the vision-language domain in order to learn a new time series per-dataset vocabulary that bridges the gap between the discrete, semantic nature of natural language and the continuous, numerical nature of time series data. We show that learnable time series-specific pseudo-word embeddings represent time series data better than existing general language model vocabularies, with VITRO-enhanced methods achieving state-of-the-art performance in long-term forecasting across most datasets.
-#### Stochastic Control for Fine-tuning Diffusion Models: Optimality, Regularity, and Convergence
- - **Authors:** Yinbin Han, Meisam Razaviyayn, Renyuan Xu
+ Heart rate (HR) estimation from photoplethysmography (PPG) signals is a key feature of modern wearable devices for health and wellness monitoring. While deep learning models show promise, their performance relies on the availability of large datasets. We present EnhancePPG, a method that enhances state-of-the-art models by integrating self-supervised learning with data augmentation (DA). Our approach combines self-supervised pre-training with DA, allowing the model to learn more generalizable features, without needing more labelled data. Inspired by a U-Net-like autoencoder architecture, we utilize unsupervised PPG signal reconstruction, taking advantage of large amounts of unlabeled data during the pre-training phase combined with data augmentation, to improve state-of-the-art models' performance. Thanks to our approach and minimal modification to the state-of-the-art model, we improve the best HR estimation by 12.2%, lowering from 4.03 Beats-Per-Minute (BPM) to 3.54 BPM the error on PPG-DaLiA. Importantly, our EnhancePPG approach focuses exclusively on the training of the selected deep learning model, without significantly increasing its inference latency
+#### Underwater Acoustic Reconfigurable Intelligent Surfaces: from Principle to Practice
+ - **Authors:** Yu Luo, Lina Pu, Junming Diao, Chun-Hung Liu, Aijun Song
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Optimization and Control (math.OC)
- - **Arxiv link:** https://arxiv.org/abs/2412.18164
+Signal Processing (eess.SP)
+ - **Arxiv link:** https://arxiv.org/abs/2412.17865
 
- - **Pdf link:** https://arxiv.org/pdf/2412.18164
+ - **Pdf link:** https://arxiv.org/pdf/2412.17865
 
  - **Abstract**
- Diffusion models have emerged as powerful tools for generative modeling, demonstrating exceptional capability in capturing target data distributions from large datasets. However, fine-tuning these massive models for specific downstream tasks, constraints, and human preferences remains a critical challenge. While recent advances have leveraged reinforcement learning algorithms to tackle this problem, much of the progress has been empirical, with limited theoretical understanding. To bridge this gap, we propose a stochastic control framework for fine-tuning diffusion models. Building on denoising diffusion probabilistic models as the pre-trained reference dynamics, our approach integrates linear dynamics control with Kullback-Leibler regularization. We establish the well-posedness and regularity of the stochastic control problem and develop a policy iteration algorithm (PI-FT) for numerical solution. We show that PI-FT achieves global convergence at a linear rate. Unlike existing work that assumes regularities throughout training, we prove that the control and value sequences generated by the algorithm maintain the regularity. Additionally, we explore extensions of our framework to parametric settings and continuous-time formulations.
-#### Accelerating AIGC Services with Latent Action Diffusion Scheduling in Edge Networks
- - **Authors:** Changfu Xu, Jianxiong Guo, Wanyu Lin, Haodong Zou, Wentao Fan, Tian Wang, Xiaowen Chu, Jiannong Cao
+ This article explores the potential of underwater acoustic reconfigurable intelligent surfaces (UA-RIS) for facilitating long-range and eco-friendly communication in marine environments. Unlike radio frequency-based RIS (RF-RIS), which have been extensively investigated in terrestrial contexts, UA-RIS is an emerging field of study. The distinct characteristics of acoustic waves, including their slow propagation speed and potential for noise pollution affecting marine life, necessitate a fundamentally different approach to the architecture and design principles of UA-RIS compared to RF-RIS. Currently, there is a scarcity of real systems and experimental data to validate the feasibility of UA-RIS in practical applications. To fill this gap, this article presents field tests conducted with a prototype UA-RIS consisting of 24 acoustic elements. The results demonstrate that the developed prototype can effectively reflect acoustic waves to any specified directions through passive beamforming, thereby substantially extending the range and data rate of underwater communication systems.
+#### Updatable Closed-Form Evaluation of Arbitrarily Complex Multi-Port Network Connections
+ - **Authors:** Hugo Prod'homme, Philipp del Hougne
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Distributed, Parallel, and Cluster Computing (cs.DC)
- - **Arxiv link:** https://arxiv.org/abs/2412.18212
+Signal Processing (eess.SP)
+ - **Arxiv link:** https://arxiv.org/abs/2412.17884
 
- - **Pdf link:** https://arxiv.org/pdf/2412.18212
+ - **Pdf link:** https://arxiv.org/pdf/2412.17884
 
  - **Abstract**
- Artificial Intelligence Generated Content (AIGC) has gained significant popularity for creating diverse content. Current AIGC models primarily focus on content quality within a centralized framework, resulting in a high service delay and negative user experiences. However, not only does the workload of an AIGC task depend on the AIGC model's complexity rather than the amount of data, but the large model and its multi-layer encoder structure also result in a huge demand for computational and memory resources. These unique characteristics pose new challenges in its modeling, deployment, and scheduling at edge networks. Thus, we model an offloading problem among edges for providing real AIGC services and propose LAD-TS, a novel Latent Action Diffusion-based Task Scheduling method that orchestrates multiple edge servers for expedited AIGC services. The LAD-TS generates a near-optimal offloading decision by leveraging the diffusion model's conditional generation capability and the reinforcement learning's environment interaction ability, thereby minimizing the service delays under multiple resource constraints. Meanwhile, a latent action diffusion strategy is designed to guide decision generation by utilizing historical action probability, enabling rapid achievement of near-optimal decisions. Furthermore, we develop DEdgeAI, a prototype edge system with a refined AIGC model deployment to implement and evaluate our LAD-TS method. DEdgeAI provides a real AIGC service for users, demonstrating up to 29.18% shorter service delays than the current five representative AIGC platforms. We release our open-source code at this https URL.
-#### Navigating Data Corruption in Machine Learning: Balancing Quality, Quantity, and Imputation Strategies
- - **Authors:** Qi Liu, Wanjing Ma
+ The design of large complex wave systems (filters, networks, vacuum-electronic devices, metamaterials, smart radio environments, etc.) requires repeated evaluations of the scattering parameters resulting from complex connections between constituent subsystems. Instead of starting each new evaluation from scratch, we propose a computationally efficient method that updates the outcomes of previous evaluations using the Woodbury matrix identity. To enable this method, we begin by identifying a closed-form approach capable of evaluating arbitrarily complex connection schemes of multi-port networks. We pedagogically present unified equivalence principles for interpretations of system connections, as well as techniques to reduce the computational burden of the closed-form approach using these equivalence principles. Along the way, we also achieve the closed-form retrieval of the power waves traveling through connected ports. We illustrate our techniques considering a complex meta-network involving serial, parallel and cyclic connections between multi-port subsystems. We further validate all results with physics-compliant calculations considering graph-based subsystems, and we conduct exhaustive statistical analyses of computational benefits originating from the reducibility and updatability enabled by our approach. Finally, we find that working with scattering parameters (as opposed to impedance or admittance parameters) presents a fundamental advantage regarding an important class of connection schemes whose closed-form analysis requires the treatment of some connections as delayless, lossless, reflectionless and reciprocal two-port scattering systems. We expect our results to benefit the design (and characterization) of large composite (reconfigurable) wave systems.
+#### Joint Adaptive OFDM and Reinforcement Learning Design for Autonomous Vehicles: Leveraging Age of Updates
+ - **Authors:** Mamady Delamou, Ahmed Naeem, Huseyin Arslan, El Mehdi Amhoud
  - **Subjects:** Subjects:
-Machine Learning (cs.LG); Artificial Intelligence (cs.AI)
- - **Arxiv link:** https://arxiv.org/abs/2412.18296
+Signal Processing (eess.SP); Artificial Intelligence (cs.AI)
+ - **Arxiv link:** https://arxiv.org/abs/2412.18500
 
- - **Pdf link:** https://arxiv.org/pdf/2412.18296
+ - **Pdf link:** https://arxiv.org/pdf/2412.18500
 
  - **Abstract**
- Data corruption, including missing and noisy data, poses significant challenges in real-world machine learning. This study investigates the effects of data corruption on model performance and explores strategies to mitigate these effects through two experimental setups: supervised learning with NLP tasks (NLP-SL) and deep reinforcement learning for traffic signal optimization (Signal-RL). We analyze the relationship between data corruption levels and model performance, evaluate the effectiveness of data imputation methods, and assess the utility of enlarging datasets to address data corruption. Our results show that model performance under data corruption follows a diminishing return curve, modeled by the exponential function. Missing data, while detrimental, is less harmful than noisy data, which causes severe performance degradation and training instability, particularly in sequential decision-making tasks like Signal-RL. Imputation strategies involve a trade-off: they recover missing information but may introduce noise. Their effectiveness depends on imputation accuracy and corruption ratio. We identify distinct regions in the imputation advantage heatmap, including an "imputation advantageous corner" and an "imputation disadvantageous edge" and classify tasks as "noise-sensitive" or "noise-insensitive" based on their decision boundaries. Furthermore, we find that increasing dataset size mitigates but cannot fully overcome the effects of data corruption. The marginal utility of additional data diminishes as corruption increases. An empirical rule emerges: approximately 30% of the data is critical for determining performance, while the remaining 70% has minimal impact. These findings provide actionable insights into data preprocessing, imputation strategies, and data collection practices, guiding the development of robust machine learning systems in noisy environments.
+ Millimeter wave (mmWave)-based orthogonal frequency-division multiplexing (OFDM) stands out as a suitable alternative for high-resolution sensing and high-speed data transmission. To meet communication and sensing requirements, many works propose a static configuration where the wave's hyperparameters such as the number of symbols in a frame and the number of frames in a communication slot are already predefined. However, two facts oblige us to redefine the problem, (1) the environment is often dynamic and uncertain, and (2) mmWave is severely impacted by wireless environments. A striking example where this challenge is very prominent is autonomous vehicle (AV). Such a system leverages integrated sensing and communication (ISAC) using mmWave to manage data transmission and the dynamism of the environment. In this work, we consider an autonomous vehicle network where an AV utilizes its queue state information (QSI) and channel state information (CSI) in conjunction with reinforcement learning techniques to manage communication and sensing. This enables the AV to achieve two primary objectives: establishing a stable communication link with other AVs and accurately estimating the velocities of surrounding objects with high resolution. The communication performance is therefore evaluated based on the queue state, the effective data rate, and the discarded packets rate. In contrast, the effectiveness of the sensing is assessed using the velocity resolution. In addition, we exploit adaptive OFDM techniques for dynamic modulation, and we suggest a reward function that leverages the age of updates to handle the communication buffer and improve sensing. The system is validated using advantage actor-critic (A2C) and proximal policy optimization (PPO). Furthermore, we compare our solution with the existing design and demonstrate its superior performance by computer simulations.
 
 
 by Zyzzyva0381 (Windy). 
