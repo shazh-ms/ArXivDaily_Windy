@@ -12,13 +12,16 @@ REPO_OWNER = 'Zyzzyva0381'
 REPO_NAME = 'ArXivDaily_Windy'
 
 # Set new submission url of subject
-NEW_SUB_URL = 'https://arxiv.org/list/cs.LG/new'
+NEW_SUB_URL = 'https://arxiv.org/list/eess.SP/new'
 
 # Keywords to search
 KEYWORD_LIST = [
-    "time-series",
-    "reinforce",
-    "reverb"
+    "acoustic",
+    "reinforcement learning",
+    "reverb",
+    "meta",
+    "separate",
+    "reconstruction"
 ]
 
 # Keywords to exclude
