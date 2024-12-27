@@ -96,7 +96,8 @@ def main(mode):
     full_report = full_report + datetime.datetime.now().strftime("%Y-%m-%d") + '\n'
 
     if mode == "github":
-        filename = './Arxiv_Daily_Notice/' + datetime.datetime.now().strftime("%Y-%m-%d") + '-Arxiv-Daily-Paper.md'
+        filename = './Arxiv_Daily_Notice/' + datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S") + ('-Arxiv-Daily'
+                                                                                                      '-Paper.md')
         filename_readme = './README.md'
         print(filename)
         with open(filename, 'w+') as f:
