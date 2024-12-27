@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 
 # Authentication for user filing issue (must have read/write access to repository to add issue to)
 USERNAME = 'Zyzzyva0381'
+NOTIFY_USER = "Windy-windie"
 
 # The repository to add this issue to
 REPO_OWNER = 'Zyzzyva0381'
