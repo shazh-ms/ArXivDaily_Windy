@@ -15,7 +15,7 @@ from github_issue import make_github_issue
 from config import NEW_SUB_URL, KEYWORD_LIST, KEYWORD_EX_LIST, TARGET_TITLES
 
 
-def main(mode):
+def main(mode, token):
     page = urllib.request.urlopen(NEW_SUB_URL)
     soup = BeautifulSoup(page, 'html.parser')
     content = soup.body.find("div", {'id': 'content'})
@@ -106,11 +106,8 @@ def main(mode):
         with open(filename_readme, 'w+') as f:
             f.write(full_report)
 
-        now = datetime.datetime.now()
-        current_hour = now.hour
-        if current_hour == 2:
-            make_github_issue(title=issue_title, body=full_report, labels=keyword_list,
-                              TOKEN=os.environ['TOKEN'])
+        make_github_issue(title=issue_title, body=full_report, labels=keyword_list,
+                          TOKEN=token if token else os.environ['TOKEN'])
         print("end")
 
     elif mode == "local":
@@ -124,7 +121,12 @@ def main(mode):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Running on which device? ')
+    parser = argparse.ArgumentParser(description='Running config')
     parser.add_argument('-m', '--mode', help='if on GitHub, github', required=False, default='local')
     args = vars(parser.parse_args())
-    main(args['mode'])
+    try:
+        with open("token.txt", "r") as file:
+            token = file.read()
+    except FileNotFoundError:
+        token = None
+    main(args['mode'], token)

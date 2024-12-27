@@ -133,3 +133,6 @@ dmypy.json
 
 # Test file
 test.md
+
+# Secret file
+token.txt

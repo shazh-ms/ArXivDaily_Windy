@@ -48,4 +48,6 @@ if __name__ == '__main__':
         "imagenet", "image retrieval"
     ]
 
-    make_github_issue(title, body, assignee, closed, labels)
+    with open("token.txt", "r") as f:
+        TOKEN = f.read()
+    make_github_issue(title, body, assignee, closed, labels, TOKEN=TOKEN)
