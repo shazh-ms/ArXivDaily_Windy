@@ -13,6 +13,10 @@ REPO_NAME = 'ArXivDaily_Windy'
 
 # Set new submission url of subject
 NEW_SUB_URL = 'https://arxiv.org/list/eess.AS/new'
+TARGET_TITLES = [
+    "New submissions",
+    "Cross submissions"
+]
 
 # Keywords to search
 KEYWORD_LIST = [

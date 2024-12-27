@@ -43,7 +43,7 @@ jobs:
       - name: Run daily arxiv 
         env:
           GITHUB: ${{ secrets.GITHUB }}
-        run: TOKEN=${{ secrets.ISSUE_TOKEN }} python main.py --token=TOKEN
+        run: TOKEN=${{ secrets.ISSUE_TOKEN }} python main.py --mode=github
       
       # ============================================
       # TODO [√] 更新仓库数据
