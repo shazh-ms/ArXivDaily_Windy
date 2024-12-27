@@ -10,8 +10,8 @@ import os
 from bs4 import BeautifulSoup as BeautifulSoup
 import urllib.request
 
-from github_issue import make_github_issue
-from config import NEW_SUB_URL, KEYWORD_LIST, KEYWORD_EX_LIST, TARGET_TITLES, NOTIFY_USER
+from github_issue import make_github_issue, comment_github_issue
+from config import NEW_SUB_URL, KEYWORD_LIST, KEYWORD_EX_LIST, TARGET_TITLES
 
 
 def main(mode, token):
@@ -99,14 +99,18 @@ def main(mode, token):
                                                                                                       '-Paper.md')
         filename_readme = './README.md'
         print(filename)
-        with open(filename, 'w+') as f:
-            f.write(full_report)
 
-        with open(filename_readme, 'w+') as f:
-            f.write(full_report)
+        try:
+            with open(filename, 'w+') as f:
+                f.write(full_report)
+            with open(filename_readme, 'w+') as f:
+                f.write(full_report)
+        except OSError:
+            print("Incorrect OS. Skipping file writing. ")
 
-        make_github_issue(title=issue_title, body=full_report + f"\n@{NOTIFY_USER}", labels=keyword_list,
+        make_github_issue(title=issue_title, body=full_report, labels=keyword_list,
                           TOKEN=token if token else os.environ['TOKEN'])
+        comment_github_issue(issue_title, full_report, TOKEN=token if token else os.environ['TOKEN'])
         print("end")
 
     elif mode == "local":
