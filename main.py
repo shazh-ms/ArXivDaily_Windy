@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup as BeautifulSoup
 import urllib.request
 
 from github_issue import make_github_issue
-from config import NEW_SUB_URL, KEYWORD_LIST, KEYWORD_EX_LIST, TARGET_TITLES
+from config import NEW_SUB_URL, KEYWORD_LIST, KEYWORD_EX_LIST, TARGET_TITLES, USERNAME
 
 
 def main(mode, token):
@@ -106,7 +106,7 @@ def main(mode, token):
         with open(filename_readme, 'w+') as f:
             f.write(full_report)
 
-        make_github_issue(title=issue_title, body=full_report, labels=keyword_list,
+        make_github_issue(title=issue_title, body=full_report + f"\n@{USERNAME}", labels=keyword_list,
                           TOKEN=token if token else os.environ['TOKEN'])
         print("end")
 
