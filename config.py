@@ -5,12 +5,12 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 # Authentication for user filing issue (must have read/write access to repository to add issue to)
-USERNAME = 'Zyzzyva0381'
+USERNAME = 'shazh-ms'
 ISSUE_TO_COMMENT = 8
 
 # The repository to add this issue to
-REPO_OWNER = 'Zyzzyva0381'
-REPO_NAME = 'ArXivDaily_Windy'
+REPO_OWNER = 'shaofei zhang'
+REPO_NAME = 'ArXivDaily_hassem'
 
 # Set new submission url of subject
 NEW_SUB_URL = 'https://arxiv.org/list/eess.AS/new'
@@ -21,16 +21,12 @@ TARGET_TITLES = [
 
 # Keywords to search
 KEYWORD_LIST = [
-    "acoustic",
-    "reinforcement learning",
-    "reverb",
-    "meta",
-    "separate",
-    "reconstruction",
-    "noise",
-    "enhance",
-    "localization",
-    "speech"
+    "text-to-speech",
+    "text to speech"
+    "tts",
+    "LLM-based",
+    "speech",
+    "voice"
 ]
 
 # Keywords to exclude
