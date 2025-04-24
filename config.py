@@ -22,7 +22,7 @@ TARGET_TITLES = [
 # Keywords to search
 KEYWORD_LIST = [
     "text-to-speech",
-    "text to speech"
+    "text to speech",
     "tts",
     "LLM-based",
     "speech",
