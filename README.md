@@ -1,4 +1,4 @@
-# Showing new listings for Monday, 12 October 2026
+# Showing new listings for Wednesday, 14 October 2026
 Auto update papers at about 2:30am UTC (10:30am Beijing time) every weekday.
 
 
@@ -13,210 +13,200 @@ Keyword list: ['text-to-speech', 'text to speech', 'tts', 'LLM-based', 'speech',
 Excluded: []
 
 
-### Today: 20papers 
-#### Acoustic Biomarkers for Alzheimer's Disease Detection from Spontaneous Speech
- - **Authors:** Anh L Tran, Arjee Javellana Restar, Bereket Kindo
+### Today: 19papers 
+#### RUBATO: Decoupled Clocks Allow Full-Duplex Models to Think as Fast as They Can
+ - **Authors:** Yi-Jen Shih, Puyuan Peng, Haohe Liu, David Harwath, Abdelrahman Mohamed
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.14299
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.14299
+
+ - **Abstract**
+ Recent Speech Full-Duplex (FDX) models are capable of engaging in naturalistic conversation by listening and speaking at the same time. Building on this foundation, recent architectures introduce internal thinking streams to enhance their intelligence. To guarantee these streams process successfully in real time, existing methods enforce a fixed decoding rate, which assumes a hardware profile capable of a specific latency. We argue this static approach is severely suboptimal. Because internal thinking is intrinsically asynchronous, an ideal FDX model should sustain real-time conversational flow while allowing each stream to decode at its own hardware-adaptive rate. Thinking streams must process as fast as the hardware allows to deliver accurate answers faster. To solve this, we propose RUBATO, a novel multistream positional encoding that assigns independent clocks to entirely decouple the streams. This structural isolation empowers the model to zero-shot interpolate across any inference decoding speed. It drastically simplifies dataset construction by requiring training on only two extreme decoding speeds while smoothly adapting to any intermediate rate during deployment. RUBATO demonstrates consistent robustness across five spoken reasoning tasks. On Spoken GSM8K, a baseline model collapses to 1.7% accuracy at interpolated speeds. Conversely, RUBATO-Full sustains 48.7% to 51.1% accuracy across all rates, leveraging faster hardware to achieve a 6.5x shorter time-to-answer with a constant time-to-first-response. This advantage holds on BIG-Bench Audio and amplifies significantly during complex full-duplex interruptions. Specifically, when a user interjects while the model is actively speaking and reasoning, RUBATO-Full achieves 40.0% to 45.1% accuracy, whereas the baseline fails completely.
+#### Cross-Lingual TTS for Indian Languages: A Benchmark and Inference-Time Duration Estimation Strategies
+ - **Authors:** Adarsh Arigala, Arjun Gangwar, Srinivasan Umesh
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.14826
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.14826
+
+ - **Abstract**
+ Recent alignment-free Text-to-Speech (TTS) models achieve high synthesis quality by removing explicit alignment modules and simplifying training. However, they often struggle in cross-lingual scenarios due to differences in character durations across languages, leading to duration mismatch and degraded speech quality. Existing approaches typically address this issue using explicit duration predictors, increasing model complexity. Systematic evaluation of TTS performance for Indian languages in cross-lingual settings remains under-explored due to the lack of standardized evaluation benchmarks. In this work, we construct a cross-lingual evaluation benchmark covering English and nine Indian languages and propose a language-aware inference-time duration estimation strategy for alignment-free TTS that incorporates language-specific duration-per character statistics without retraining or architectural modifications. We further develop heuristic formulations that refine duration estimation based on language-dependent duration variations. Experiments on bilingual and multilingual A-DMA models demonstrate improved speech naturalness, intelligibility, and speaker similarity while reducing duration mismatch.
+#### SemiCodec: Bridging Speech Tokenization and High-fidelity Reconstruction with Semi-discrete Representations
+ - **Authors:** Kecan Mao, Nan Xu, Zhaoyang Meng, Zhengyao Ma, Yingming Gao, Yi Zhao, Ya Li
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.14834
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.14834
+
+ - **Abstract**
+ Speech representation learning requires a discrete modeling interface while preserving high waveform fidelity. Existing approaches rarely achieve both: discrete tokens ease modeling but lose fine-grained acoustic information, while continuous latents preserve fidelity but require specialized generative objectives. We introduce SemiCodec, a novel Semi-discrete neural speech Codec with synchronized discrete tokens and continuous latents. Direct joint optimization may create a reconstruction shortcut through the continuous pathway, leaving the discrete tokens insufficiently grounded. To address this issue, we propose a Preserve-then-Ground training paradigm that first establishes a high-fidelity synthesis space and then grounds SSL-guided discrete tokens within it. Experiments show that SemiCodec outperforms fully discrete codecs in reconstruction quality and intelligibility while remaining competitive with continuous representations in acoustic fidelity and speaker preservation. Audio samples are available at this https URL
+#### Word-Aligned Prosody Reflects Speaker Differences More Than Depression or PTSD Severity
+ - **Authors:** Hsiang-Chen Yeh, Aurosweta Mahapatra, Shreeram Suresh Chandra, Ryan L. Boyd, Berrak Sisman
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Computation and Language (cs.CL); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.15181
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.15181
+
+ - **Abstract**
+ Word-aligned prosody is increasingly used to detect depression and posttraumatic stress disorder (PTSD), yet the stability and clinical relevance of these measurements remain unclear. We examine stability at two levels. At the word level, we ask whether a speaker produces the same word in a similar speaker-specific way across different utterance contexts. At the speaker level, we ask whether averaging prosody across many words produces consistent speaker scores across separate recordings. Drawing on principles of psychological measurement, we compare these representations in four corpora spanning acted, spontaneous, and clinical speech. Word-specific deviations show little cross-context recurrence (0.01-0.16), whereas speaker summaries are highly consistent, reaching 0.997 in ESD, 0.73-0.90 in MSP-Podcast, and 0.84-0.996 in DAIC-WOZ and PTSD-STOP. Despite this consistency, associations with depression or PTSD severity do not exceed 0.15; equivalence tests exclude effects of 0.30 in all analyses and 0.20 in DAIC-WOZ, while within-person associations with daily PTSD symptoms are near zero ($|\rho|\leq0.04$). Thus, aggregation yields stable speaker-level prosodic measures, but these measures do not detectably track depression or PTSD severity in the studied corpora. Code is available at this https URL.
+#### KOMOS: Automatic Mean Opinion Score Estimation for Korean Speech
+ - **Authors:** Sangchun Ha, Junwon Moon, Kyuhong Shim
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.15353
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.15353
+
+ - **Abstract**
+ As speech generation and real-time spoken dialogue systems advance, neural mean opinion score (MOS) predictors are increasingly used to evaluate speech quality. However, many existing predictors are trained primarily on English read speech and generalize inconsistently across languages and speaking styles. In particular, their reliability on Korean speech has not been adequately validated. We propose KOMOS, a Korean MOS predictor for evaluating the overall quality of both read and spontaneous speech. To train and evaluate KOMOS, we collect 5,000 ratings from 29 native Korean listeners for 1,000 utterances spanning real recordings, synthesized speech, and degraded speech. KOMOS achieves an utterance-level Spearman rank correlation (SRCC) of 0.900, compared with 0.703 for UTMOS v1 and 0.767 for UTMOS v2. The inference code is publicly available at this https URL and the trained model at this https URL.
+#### LiveAnon: Improving Privacy and Utility in Streaming Speaker Anonymization with Codec Language Models
+ - **Authors:** Yejin Kim, Kyungsu Kim, Seungu Han, Kyogu Lee
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS); Machine Learning (cs.LG); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.12500
+ - **Arxiv link:** https://arxiv.org/abs/2610.15379
 
- - **Pdf link:** https://arxiv.org/pdf/2610.12500
+ - **Pdf link:** https://arxiv.org/pdf/2610.15379
 
  - **Abstract**
- Alzheimer's disease (AD) remains a major public health challenge, and early identification is crucial for timely intervention and care planning. Recent work has shown that speech-based digital biomarkers can capture subtle changes in vocal production, prosody, and timing that often precede or accompany cognitive decline. In this study, we investigate whether acoustic features extracted from spontaneous speech can reliably distinguish individuals with AD from healthy controls. Using a structured speech dataset derived from the Cookie Theft picture-description task, we extract clinically informative low-level descriptors spanning prosodic, spectral, and temporal domains, and evaluate a range of machine learning classifiers. Our results indicate that acoustic biomarkers carry strong discriminative value, with the best-performing models achieving clinically meaningful separation between diagnostic groups. These findings support the use of non-invasive, low-cost audio-based screening tools and motivate further work on multimodal and longitudinal assessment frameworks for dementia risk detection.
-#### E3-System: Expressive EmoData, Explicitly Controllable, Easy-to-Use TTS
- - **Authors:** Yiqiao Huang, Xiaolong Lin, Zhenpeng Zhan, Zhizheng Wu
+ Speaker anonymization (SA) aims to conceal speaker identity while preserving linguistic content and emotion, but existing streaming systems often lose emotion information through discrete content bottlenecks or require emotion-specific modeling. We present LiveAnon, a voice-conversion-based streaming SA system that directly conditions an autoregressive codec language model on hidden features from a pretrained streaming ASR encoder, preserving emotion without emotion-specific supervision. To reduce codec-generation latency, we introduce capped RVQ decoding, which preserves dependencies among coarse codebooks while predicting the remaining codebooks in parallel. Under VPC24, LiveAnon improves intelligibility and emotion preservation over fixed-target Stream-Voice-Anon (SVA), a strong prior streaming SA system, matches emotion-prompted SVA in emotion preservation, and achieves the strongest semi-informed privacy among streaming systems. Under VPC26, it ranks second across all metrics among the evaluated anonymization systems, demonstrating a strong privacy-utility balance.
+#### Unsupervised Cross-device Speaker Diarization And Linking Through Spatiotemporal Structure
+ - **Authors:** Suhas BN, Nikitha K
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.15978
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.15978
+
+ - **Abstract**
+ Linking speakers across independently recorded rooms is difficult because microphone, room, and codec mismatch distort speaker embeddings. We study visitor linking without visitor enrollment or identity labels in simulated outpatient workflows. The proposed method combines per-device embedding centering, concurrency constraints, room-type-specific visit constraints, and a clustering threshold calibrated from concurrent visitors and identified staff voices. On simulated days built from VOiCES recordings, with companions, return visits, walk-ins, silent visits, and acoustic leakage, it improves B$^3$-F1 over the best label-free baseline for all 11 extractors, by 5.3-14.6 points (all 95\% intervals exclude zero). ECAPA-TDNN reaches 86.6, compared with 76.4 for the best label-free baseline and 87.7 for the best oracle-informed baseline. Gains persist across the reported workflow perturbations, but depend on removing duplicated cross-room speech: without this step, the method wins for only 2 of 11 extractors. Single-visit patients also remain vulnerable to false merges. These results support structure-aware linking while identifying preprocessing and identity-safety limitations that must be addressed before clinical deployment.
+#### Towards Privacy-Preserving ASR: Speaker-Level Machine Unlearning
+ - **Authors:** Seaone Ok, Seungu Han, Eungbeom Kim, Kyogu Lee
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.16196
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.16196
+
+ - **Abstract**
+ Automatic Speech Recognition (ASR) systems are commonly designed to transcribe linguistic content independently of speaker identity. However, speaker-specific information can persist within the latent representations of ASR models, raising privacy concerns when training data includes sensitive individuals. While machine unlearning has been studied in several speech tasks, applying speaker unlearning to ASR remains challenging due to the strong entanglement of linguistic and speaker-related information in speech representations. In this work, we conduct a layer-wise analysis of Self-Supervised Learning (SSL) based ASR representations, revealing that speaker identity is primarily encoded in intermediate encoder layers. Based on this observation, we explore a feature-level unlearning strategy that targets these identity structures. Experiments on the VCTK corpus show that the proposed approach removes the influence of specific speakers while maintaining robust transcription performance.
+#### FOAdapter: A Plug-and-Play Spatial Tokenizer for Low-Bitrate FOA Speech Coding
+ - **Authors:** Kirak Kim, Yoonjeong Park, Juhan Nam, Sungyoung Kim, Minje Kim
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.12993
+ - **Arxiv link:** https://arxiv.org/abs/2610.16202
 
- - **Pdf link:** https://arxiv.org/pdf/2610.12993
+ - **Pdf link:** https://arxiv.org/pdf/2610.16202
 
  - **Abstract**
- Recent zero-shot Text-to-Speech (TTS) systems can clone unseen speakers, yet controllable expressiveness remains limited by a gap between semantic intent and acoustic realization. Text descriptions offer a natural control interface but provide weak acoustic grounding, whereas speech style prompts provide concrete prosody but entangle style with the prompt speaker's timbre. To bridge this gap, we propose E3-System, a unified intent-to-speech framework for expressive zero-shot TTS that couples three requirements: Expressive style modeling, Explicit timbre-style control, and Easy-to-use natural-language interaction. Given a target speaker and either a natural-language style description or a speech style prompt, E3-System generates expressive speech while preserving the target timbre. The key idea is to close the full control loop: building a large expressive style space, grounding user intent into usable acoustic style references, and synthesizing speech with disentangled timbre and style. To realize this loop, EmoData provides a thousand-hour multilingual emotional speech dataset, Style-RAG grounds text descriptions into high-quality acoustic style prompts from these data, and Dual-TTS transfers the grounded style to arbitrary target speakers through VC-augmented timbre-style disentanglement. Experiments show that E3-System achieves strong speech quality, speaker preservation, and explicit expressive controllability.
-#### Frontend-Assisted Large Audio-Language Models for SLT2026 SmartGlasses Challenge
- - **Authors:** Yushi Wang, Zeyan Song, Xiaobin Rong, Chengwei Liu, Jun Gao, Jing Lu
+ Spatially encoded speech conveys not only linguistic information but also spatial cues. This enables listeners to distinguish and localize speakers, contributing to more natural and realistic auditory experiences in applications such as remote conferencing and immersive media. Neural speech codecs (NSCs) enable high-quality reconstruction of monaural speech at increasingly low bitrates while preserving linguistic information, but their ability to effectively preserve spatial cues remains limited. We propose FOAdapter, a plug-and-play spatial tokenizer that leverages a pretrained monaural speech codec to efficiently represent both linguistic and spatial information in first-order ambisonic (FOA) speech at low bitrates. Comprehensive evaluation demonstrates that FOAdapter consistently preserves spatial information across all evaluated codecs. Source code and audio examples are available on our demo website.
+#### Spiking Neural Beamforming for Multichannel Speech Enhancement on the Edge
+ - **Authors:** Hanan Beit-On, Eli Shapira, Boaz Rafaely
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.13282
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.16430
 
- - **Pdf link:** https://arxiv.org/pdf/2610.13282
+ - **Pdf link:** https://arxiv.org/pdf/2610.16430
 
  - **Abstract**
- This paper describes our systems for the Track 1 time-stamped speaker-attributed ASR task of the SmartGlasses Challenge. To handle overlapping speech, background noise and far-field conditions in two-person conversations, we employ SoulX-Transcriber, a multimodal large language model that takes full-length audio as input and generates structured transcriptions. In addition, we investigate the effect of speech frontend processing, including a rule-based Guided Source Separation method and a data-driven speech separation model, both of which improve performance on the validation set. Considering inference stability, our final submission uses the fine-tuned SoulX-Transcriber system, achieving a tcpCER of 6.22 on the test set.
-#### Does Financial Speech Need Continual Learning Regularization? A Study of EWC and mini-KFAC on Earnings Call ASR
- - **Authors:** Thai Quoc On, Homayoon Beigi
+ Speech enhancement with wearable and edge devices requires architectures that balance enhancement quality against power and memory resources. Spiking Neural Networks (SNNs) offer a promising path towards this goal through sparse, event-driven computation, but existing SNN-based speech enhancement methods are largely restricted to single-channel processing and therefore cannot exploit the spatial diversity available from microphone arrays. In this work, we propose a fully SNN framework for multichannel speech enhancement based on a fully connected architecture (FC-SNN) with sequential spike encoding, derived from a compact artificial neural network (ANN) baseline via leaky integrate-and-fire neurons. We characterize how enhancement performance scales with model size and spike-train length relative to ANN and classical beamforming baselines, and report the resulting parameter counts and computational complexity. We further compare direct and rate spike encoding, revealing a clear trade-off between event-driven computation and enhancement performance, and use these results to identify favorable configurations for edge devices.
+#### Active noise cancellation extends the benefit of AI speech enhancement in real hearing-aid recordings
+ - **Authors:** Andrew T. Sabin, Linkai Li
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Computation and Language (cs.CL); Machine Learning (cs.LG)
- - **Arxiv link:** https://arxiv.org/abs/2610.13432
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.17287
 
- - **Pdf link:** https://arxiv.org/pdf/2610.13432
+ - **Pdf link:** https://arxiv.org/pdf/2610.17287
 
  - **Abstract**
- Earnings call transcription presents a realistic continual learning scenario where Automatic Speech Recognition (ASR) systems are updated with new recordings but risk catastrophic forgetting of previously learned financial speech patterns. Adapting Whisper-small from a general-domain speech corpus to the Earnings22 benchmark reveals the opposite: all evaluated methods exhibit improvement on held-out financial speech from the same domain during adaptation rather than forgetting. This task complementarity makes regularization counterproductive. Nevertheless, when regularization is warranted, a layer-wise mini-Kronecker-Factored Approximate Curvature (mini-KFAC) approximation seems to achieve lower word error rates (WERs) and more stable optimization than standard diagonal Elastic Weight Consolidation (EWC). The results suggest that task complementarity should be assessed before applying continual learning constraints, and prefer mini-KFAC EWC over diagonal EWC when needed.
-#### Vocal Intensity Conversion with Continuous SPL Control via Adversarial Training
- - **Authors:** Quentin Le Tellier, Albert Rilliard, Olivier Perrotin, Marc Evrard
+ Active noise cancellation (ANC) is common in headphones but rare in hearing aids, and its value for understanding speech in noise is not established. Algorithms that improve signal-to-noise ratio (SNR) act only on the hearing aid's amplified path, while unprocessed sound also reaches the eardrum directly through the vent, limiting the SNR improvement that is realized. Our earlier simulations predicted that attenuating this direct path with ANC would substantially increase the benefit of such processing. We tested that prediction in three hardware conditions: a standard receiver-in-canal (RIC) hearing aid, and an ANC-capable RIC with ANC off and on. Each was fit to NAL-NL2 targets for an N3 hearing loss and recorded on KEMAR with an AI speech-enhancement algorithm (AI-SE) off and on, in seven realistic scenes above 70 dB SPL. Speech and noise spectra were estimated from each recording with a binary time-frequency mask derived from the clean speech. AI-SE produced a similar peak benefit of about 4 dB in the high frequencies in all three conditions, but that benefit stayed at or above 1 dB only above 1500, 600, and 130 Hz for the standard RIC, ANC RIC (ANC off), and ANC RIC (ANC on), respectively, closely tracking the measured attenuation of the direct path. With AI-SE on, ANC RIC (ANC on) improved SII-weighted SNR by 5.1 dB relative to the open ear, compared with 3.3 dB for ANC RIC (ANC off) and 1.6 dB for the standard RIC. With AI-SE off, enabling ANC added only 0.2 dB. ANC is therefore an enabling technology: on its own it added little, but by attenuating the direct path it allowed SNR-enhancing processing to deliver substantially greater benefit at the eardrum, extending that benefit to much lower frequencies.
+#### Self-Supervised Source-Filter Model of Speech Production
+ - **Authors:** Nani Meka (1), Raghavan Ramesh (1), Sri Rama Murty Kodukula (1) ((1) Speech Information Processing Lab, Indian Institute of Technology Hyderabad)
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Machine Learning (cs.LG); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.13608
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.18120
 
- - **Pdf link:** https://arxiv.org/pdf/2610.13608
+ - **Pdf link:** https://arxiv.org/pdf/2610.18120
 
  - **Abstract**
- Vocal intensity conversion renders a recorded utterance at a different vocal intensity, rather than simply scaling its amplitude, while preserving its content and speaker identity. Existing systems control intensity through a reference utterance or a few discrete categories. Instead, we control the conversion with any target sound pressure level (SPL) on a continuous dB scale. A lightweight converter, trained as a conditional cycle-consistent GAN without parallel data, transforms the features of a frozen speech encoder, from which a pretrained vocoder resynthesizes the speech. We compare three representations, log-mel spectrograms, WavLM, and SpeechTokenizer, and introduce an objective protocol that measures the achieved intensity change against the target one on a calibrated corpus. With WavLM, the converter achieves a measured 83% of the target change in intensity and also shifts the fundamental frequency. A perceptual evaluation confirms that perceived vocal intensity increases with the target level on amplitude-normalized stimuli.
-#### OpenSVBench: Diagnosing Speaker Verification Generalization Across Deployment Scenarios
- - **Authors:** Qituan Shangguan, Bosen Xu, Shuai Wang
+ Deep learning models of speech seldom represent the source-filter process by which speech is produced, relying instead on latent features with no physical correspondence to articulation or phonation. We propose SoFilNet, a self-supervised, differentiable Source-Filter Network that estimates the parameters of speech production directly from the raw waveform: a source, specified by fundamental frequency (F0), voicing and the aperiodicity of five frequency bands, and a filter, specified by ordered formant poles, additional poles that shape the rest of the spectral envelope, and antiresonance zeros. The model is trained only to reconstruct the input speech; no formant or pitch annotation is used. Since per-bin spectral losses favor blurred spectra wherever the model is uncertain, we train F0 and voicing against autocorrelation pseudo-labels refined with the model's own filter, aperiodicity against the periodic fraction of each band, and formant sharpness against spectral contrast. On VTR-FORMANTS, the estimated formants attain the lowest mean error among the reported methods, including supervised trackers, and on the unseen PTDB-TUG corpus the F0 frame error matches the best classical tracker and is lower than that of all learned trackers. The parameters are also consistent with speech production theory: aperiodicity rises with frequency and orders phone classes by the turbulence of their excitation, and the zeros deepen on nasal consonants, the lower one rising with place of articulation.
+#### PhonoVoxtLM: Exploring Single-Codebook Phonological Tokens for Speech Understanding and Generation
+ - **Authors:** Mingrui Liang, Kentaro Onda, Shinji Watanabe
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.13760
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.18469
 
- - **Pdf link:** https://arxiv.org/pdf/2610.13760
-
- - **Abstract**
- Speaker verification (SV) systems now achieve very low error rates on standard public protocols, but those results do not fully describe deployment generalization. VoxCeleb-style evaluations remain useful anchors for English in-the-wild media speech. Scenario-specific evaluations and challenges are also valuable. However, neither setting directly shows whether the same system remains reliable across diverse deployment scenarios. We introduce OpenSVBench, a public benchmark for cross-scenario SV evaluation. Its fixed public core contains 26 trial sets organized into 11 scenario groups, with 9.15M verification trials, frozen target/non-target keys, and metadata for scenario-wise reporting. Around this core, the online leaderboard acts as a diagnostic evaluation interface rather than only a ranked list. It accepts score packages from new systems, evaluates them with frozen keys and common scoring, and reports trial-set breakdowns, scenario-group metrics, macro EER/minDCF, model-wise profiles, and scenario-wise comparisons. We evaluate 18 public checkpoints spanning x-vector, ECAPA-TDNN, CAMPPlus, ResNet and ERes variants, ReDimNet2, SAM-ResNet, and pretrained Transformer speaker recipes. The results show clear cross-scenario gaps: systems with similar macro EER can have different scenario profiles, strong performance in one scenario does not guarantee strong performance in another, and same-scenario trial sets can still expose source and protocol gaps.
-#### OpenPA: Forced-alignment-free Multi-granular Pronunciation Assessment with Mixed-transcript Adaptation
- - **Authors:** Fu-An Chao, Bi-Cheng Yan, Berlin Chen
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Computation and Language (cs.CL); Sound (cs.SD); Signal Processing (eess.SP)
- - **Arxiv link:** https://arxiv.org/abs/2610.13826
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13826
+ - **Pdf link:** https://arxiv.org/pdf/2610.18469
 
  - **Abstract**
- Recent advances in automatic pronunciation assessment (APA) have driven a shift from scripted to free-form assessment. However, existing methods often rely on multi-stage pipelines with forced alignment and separate feature extractors, limiting their practicality across response settings. In light of this, we propose OpenPA, a novel APA framework that leverages Whisper's cross-attention mechanism to jointly predict word- and utterance-level pronunciation scores without forced alignment. Through mixed-transcript adaptation and adaptive substitution weighting, OpenPA accommodates heterogeneous transcripts across closed- and open-response settings within a single model. Trained solely on speechocean762, OpenPA achieves the strongest overall performance among evaluated systems under in-domain closed and simulated open-response conditions, while maintaining its performance zero-shot on MultiPA. An additional cross-task evaluation on oral-cancer speech suggests its potential applicability beyond non-native speech.
-#### SEER: Source-Conditioned Emotion Enhancement via Retrieval for Cochlear-Implant Speech
- - **Authors:** Hsing-Hang Chou, Yun-Shao Lin, Ching-Chin Sung, Chi-Chun Lee
- - **Subjects:** Subjects:
-Signal Processing (eess.SP); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.11131
-
- - **Pdf link:** https://arxiv.org/pdf/2610.11131
-
- - **Abstract**
- Cochlear implants (CIs) restore speech access but weaken cues needed for vocal emotion recognition. Prior CI-oriented enhancement requires parallel normal/strong recordings and intensity labels. We propose SEER, a retrieval-based framework that learns which same-emotion reference helps each source remain recognizable after CI processing. A source-conditioned retriever learns CI-aware utility from sampled emotional voice conversion outcomes, while uncertainty-guided exploration avoids exhaustive pair evaluation; neither parallel recordings nor intensity labels are required. SEER improves Source macro-F1 at N8 by 7.30 points on RAVDESS and 11.66 points on ESD, with significant ESD gains across N4/N8/N16. Sixteen-listener RAVDESS gains are significant across all conditions. Exhaustive analysis finds an aggregate benefit from stronger references but little effect from matching gender or content.
-#### TTS-Q: Perception-Guided Post-Training Quantization of Text-to-Speech Diffusion Transformers
- - **Authors:** Xiaoqin Feng, Yuqi Li, Weilun Feng, Yi-Cheng Lin, Kai Li, Xianglong Wang, Kuo Yang, Chuanguang Yang, Yingli Tian, Wei Li, Zhongwei Cheng, Lin Chen
- - **Subjects:** Subjects:
-Sound (cs.SD); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.12474
-
- - **Pdf link:** https://arxiv.org/pdf/2610.12474
-
- - **Abstract**
- Zero-shot text-to-speech (TTS) can clone a voice from seconds of audio. Yet the quality comes from billion-parameter diffusion transformers whose size and multi-step sampling put them out of reach of the on-device, assistive, and real-time applications that need them most. Post-training quantization (PTQ) shrinks such models without retraining, but it has been built for language and vision, not speech. At 4 bits, a strong quantizer leaves intelligibility close to full precision but consistently erodes speaker timbre, so error rates stay low while the voice drifts from the target speaker. We ask why quantization hurts speech, where the damage lives, and whether it can be repaired without retraining. To find out, we run the first 4-bit weight-and-activation (W4A4) PTQ study of a TTS diffusion transformer at 1B and 3.5B. The timbre cost comes from both the weight and the activation quantization, but only the activation part has the timestep structure a precision schedule can exploit. We therefore introduce TTS-Q, which selects hard-to-quantize items from task-matched calibration candidates and applies a budget-balanced mixed-precision schedule that assigns higher precision to late-step feed-forward activations. TTS-Q recovers timbre best at both scales, at no cost to intelligibility. Separately, the deployed calibrated-W4A4 reference reduces peak memory on GPU, providing a practical reference for resource-constrained TTS deployment.
-#### RDSE: Real-Time Directional Speech Enhancement Framework for Dual-Mic Commodity Smartphones
- - **Authors:** Chinmay Deo, Danish Mahajan, Soudeep Ghoshal, Himanshu Buckchash
+ We investigate how speech token representations can support both understanding and generation within a unified speech language model. We present PhonoVoxtLM, built on the existing VoxtLM framework using phonological tokens designed to retain linguistic content and prosodic information. The existing tokenizer is jointly trained for speech recognition and resynthesis. Its single-codebook units serve as both speech inputs and generation targets, without additional speech-token prediction modules. Experiments show improvements over HuBERT-based baselines across understanding and generation under different training-data scales. Further comparisons with WavLM-based tokens reveal trade-offs between recognition and synthesis, highlighting the importance of evaluating shared representations across both capabilities. We further extend the framework to spoken question answering through fine-tuning with replay. The adapted model improves answering performance over similarly adapted HuBERT baselines while retaining advantages on the original speech tasks. Our findings support single-codebook representations designed for both content and prosody as a practical choice for unified multitask speech modeling.
+#### Hearing's Blind Spots: Toward Perceptual Compute Allocation in Neural Text-to-Speech
+ - **Authors:** Aayush Gupta
  - **Subjects:** Subjects:
 Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.12476
+ - **Arxiv link:** https://arxiv.org/abs/2610.14056
 
- - **Pdf link:** https://arxiv.org/pdf/2610.12476
+ - **Pdf link:** https://arxiv.org/pdf/2610.14056
 
  - **Abstract**
- Audio-visual zooming on mobile devices is fundamentally constrained by limited microphone count, compute resource, unknown array geometry, and weak assumptions on real-world acoustic conditions. We present RDSE: Real-Time Directional Speech Enhancement Framework, a hybrid pipeline that combines traditional signal processing and modern machine learning methods for dual-microphone low-end smartphones. Unlike tightly coupled AV systems that continuously use visual feeds or embeddings, RDSE decouples visual interaction from feature inference, using camera input solely to parameterize the steering vector for spatial filtering. The proposed system uses four modules: dereverberation network, a beamformer with a temporal convolutional network, and a MetricGAN based denoiser. Extensive evaluation on benchmark data and real-world recordings demonstrates effective zooming without precise geometry calibration. Comparative experiments show competitive performance to existing methods. Proposed system is rigorously tested for statistical validity, ablation study, latency profiling, and practicality through real-time live-streaming.
-#### Efficient Audio-Visual Speech Enhancement via Reinforcement Learning-Based Neural Architecture Search
- - **Authors:** Khubaib Ahmed, Ahsan Adeel, Nasir Saleem, Kia Dashtipour, Ahsan Ulhaq, Amir Hussain
+ A speech synthesizer produces a detailed waveform, but a listener need not hear every detail. Strong sounds can mask weaker neighbors, creating context-dependent "blind spots" in hearing. Could neural text-to-speech (TTS) spend less computation on those details? We investigate a first step: how the placement of spectral degradation affects completed speech from Piper and Kokoro. At matched time-frequency bin-removal budgets, a simple low-energy-first policy achieves higher mean wideband PESQ than random deletion and the tested psychoacoustic masking criteria. At 50% removal in the spreading-matrix comparison, energy, masking, and random policies score 4.46, 3.60, and 1.19 on Piper, and 3.42, 2.10, and 1.22 on Kokoro. Spectrograms and masking maps expose where these perturbations fall and why a model's below-threshold regions cannot automatically be treated as inaudible. Calibration diagnostics show substantial threshold sensitivity, while a small single-listener pilot establishes no transparent removal budget. CPU profiles identify waveform decoding as the main measured kernel cost, but a tested dynamic-INT8 Kokoro decoder runs slower than FP32 on both CPUs. The results establish energy ranking as a strong oracle baseline and motivate testing perceptual allocation inside a decoder. They do not yet demonstrate saved computation: the decisions here use already synthesized audio, and quality metrics are evaluated at 16 kHz. We release scripts, results, audio examples, and a listening-study instrument.
+#### BridgeCodec: Mamba Enhanced Neural Audio Codec with Schrödinger Bridge at Low Bitrate
+ - **Authors:** Zijian Lin, Jing Yang, Jinghao Luo, Zhuo Wang, Fan Fan, Zhiyong Wu
+ - **Subjects:** Subjects:
+Sound (cs.SD); Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.15453
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.15453
+
+ - **Abstract**
+ Neural audio codecs achieve remarkable performance but operate as closed ecosystems with rigidly co-trained encoderdecoder pairs, severely hindering interoperability. To resolve this, we propose BridgeCodec, a versatile framework that decouples these pairs by translating latent representations between mismatched, frozen endpoints. We formulate this cross-codec translation as a Schrödinger Bridge optimal transport problem, enabling robust mapping between disparate distributions without predefined noise priors. To efficiently capture longrange speech temporal dependencies, we integrate a Mambaenhanced U-Net architecture. We validate BridgeCodec on an extreme deployment scenario: mapping a lightweight 8 kHz source encoder directly to a 48 kHz target decoder at an ultralow bitrate of 1 kbps. Experimental results demonstrate that BridgeCodec achieves superior wideband reconstruction and high perceptual quality, successfully bridging heavily bottlenecked, heterogeneous codecs.
+#### Deep Speech Representations Track Word Timing along a Low-Dimensional Circular Trajectory
+ - **Authors:** Burin Naowarat, Hao Tang, Sharon Goldwater
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.16273
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.16273
+
+ - **Abstract**
+ Speech timing is fundamental for speech models to recognize words accurately, but how word-timing information is represented in speech models remains underexplored. We study this question using the framework of representational geometry, which investigates whether and how concepts are represented in low-dimensional subspaces of the representation space. Prior work in cognitive neuroscience has shown that when HuBERT feature sequences are averaged across words of the same duration, they form near-circular trajectories from word onset to word offset in a two-dimensional "temporal subspace." Here we show that this circular structure of word timing is a general property of deep speech representations, by demonstrating its emergence in nine additional speech models covering both supervised and self-supervised. We then move beyond averaged word segments and show that in HuBERT, the circular trajectories are consistent enough at the level of individual words to perform word segmentation. Our approach, Rotary Segmentation (RoSeg), achieves 64.3% boundary F-score on Librispeech by detecting word boundaries when cycles complete in the temporal subspace. Although supervision is needed to identify a good subspace, nevertheless this result demonstrates much stronger implicit word knowledge in HuBERT than has previously been shown.
+#### D2: High-Capability Full-Duplex Spoken Language Models from Half-Duplex Backbones
+ - **Authors:** Cheng-Kuang Chang, Alexander H. Liu, Brian Kingsbury, Hilde Kuehne, Rogerio Feris, Samuel Thomas, James Glass, Kai-Wei Chang
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.17124
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.17124
+
+ - **Abstract**
+ Full-duplex spoken language models (FD-SLMs) support simultaneous listening and speaking, but often lag behind half-duplex spoken language models (HD-SLMs) in general capabilities. We propose Dialogue-to-Duplex (D2), a framework that converts pretrained HD-SLMs into high-capability FD-SLMs at fine temporal granularity. D2 adapts the original audio encoder to streaming through decoder-free representation distillation and learns full-duplex interaction through supervised fine-tuning. We systematically study the effects of chunk size on full-duplex interaction, general capabilities, and inference computation. We apply D2 to two distinct HD-SLM architectures, Qwen3-Omni and LLaMA-Omni 2. At a 12.5Hz update rate, Qwen3-Omni-D2 achieves 99.2% turn-taking success with 521-ms latency, 99.5% interruption success, and a state-of-the-art VoiceBench score of 70.1.
+#### SonicWorld: Source-Centric Latent Dynamics for Spatial Audio Reasoning
+ - **Authors:** Chenlong Wei, Hanling Wang, Mingjin Lou, Yufan Shi, Yandong Sun, Sheldon Yu, Xiaohui Zhu, Xiaobo Jin, Yiwei Wang
  - **Subjects:** Subjects:
 Sound (cs.SD); Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.12796
+ - **Arxiv link:** https://arxiv.org/abs/2610.17131
 
- - **Pdf link:** https://arxiv.org/pdf/2610.12796
+ - **Pdf link:** https://arxiv.org/pdf/2610.17131
 
  - **Abstract**
- Audio-visual speech enhancement (AVSE) improves speech intelligibility in noisy environments but often relies on computationally expensive models unsuitable for resource-constrained edge devices. This paper introduces a reinforcement learning-driven neural architecture search (RL-NAS) framework to discover compact, efficient AVSE architectures. The search space preserves temporal alignment between audio and visual streams, while a novel reward function jointly optimises speech enhancement performance, measured by SI-SNR improvement, and model compactness. Using proximal policy optimisation with constraint-aware action masking, the framework evaluates only 35 candidate architectures and identifies a model with 2.9 million parameters, compared with 22 million in the baseline. The proposed architecture achieves a 14.5 dB SI-SNR improvement, only 0.7 dB below the baseline, while reducing model size by approximately nine-fold. Evaluation on commercial mobile CPUs demonstrates a 4.3-fold reduction in real-time factor, supporting practical on-device deployment. Compared with random search, RL-NAS achieves 92% higher search efficiency. Architectural analysis reveals that shallower but wider temporal convolutional blocks and aggressive visual pathway pruning can maintain enhancement performance while substantially reducing computational requirements. These findings demonstrate the potential of reinforcement learning-guided architecture search for developing lightweight, efficient and deployable multimodal speech enhancement systems.
-#### Emo-BPO: Emotion Bidirectional Preference Optimization for Diffusion-based Emotional TTS
- - **Authors:** Jiacheng Shi, Hongfei Du, Xinyuan Song, Y. Alicia Hong, Yanfu Zhang, Ye Gao
+ Dynamic spatial audio reasoning requires a model to associate changing acoustic observations with the correct source and recover its spatial state at a queried time or interval, a challenge intensified by overlapping speech and source motion. To study this problem, we introduce Sonic-Bench, comprising 2.8K first-order Ambisonics clips and 28.8K target-specific question-answer pairs across 480 simulated indoor scenes. The benchmark covers localization, distance estimation, and motion reasoning in single- and dual-source settings. We further propose SonicWorld, which integrates physical, learned acoustic, and semantic features into persistent source states through learned transitions and recurrent updates, and projects them into an Omni LLM for spatial reasoning. Compared with Spatial-Omni on the Sonic-Bench test split, SonicWorld improves direction accuracy from 31.98% to 34.69% and reduces azimuth error from 57.22° to 48.01°. In zero-shot transfer to Spatial LibriSpeech, SonicWorld retains strong localization performance, achieving 73.98% direction accuracy and 19.29° azimuth error, compared with 27.14% and 70.74° for Spatial-Omni.
+#### GeoMER: A Joint Euclidean-Hyperbolic Geometry Framework for Multimodal Emotion Recognition
+ - **Authors:** Ting Zhu, Huizhi Liang, Boguslaw Obara, Shufei Duan, Varun Ojha
  - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.12958
+Sound (cs.SD); Artificial Intelligence (cs.AI); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.18587
 
- - **Pdf link:** https://arxiv.org/pdf/2610.12958
-
- - **Abstract**
- Diffusion-based TTS has demonstrated strong capability in emotional speech generation. However, existing emotion alignment methods primarily reinforce target emotional expressions while overlooking modeling of competing emotional modes, limiting fine-grained controllability. This issue becomes more pronounced under classifier-free guidance (CFG), which relies on contrasting conditional trajectories to shape generation. We propose Emotion Bidirectional Preference Optimization (Emo-BPO), a simple effective framework that jointly learns emotion-aligned and emotion-contrastive score functions from reordered same-text emotional pairs. Our method requires neither auxiliary reward models nor additional annotations, and can be seamlessly integrated into existing diffusion-based TTS systems to improve emotional controllability and expressiveness.
-#### From 2.1M Hours of Raw Broadcast Audio to Finnish Speech SSL: Confidence Filtering and Architectural Analysis at Scale
- - **Authors:** Yaroslav Getman, Tamás Grósz, Tommi Lehtonen, Mikko Kurimo
- - **Subjects:** Subjects:
-Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13102
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13102
+ - **Pdf link:** https://arxiv.org/pdf/2610.18587
 
  - **Abstract**
- Broadcast archives offer scale and diversity for self-supervised learning (SSL) but contain substantial noisy, non-speech, and multilingual content. Prior work typically relies on voice activity detection or language identification (LID) to extract speech, ensuring presence rather than quality. Whether and how to filter unlabeled speech by quality for SSL, particularly from noisy broadcasts, remains underexplored. We present a large-scale Finnish SSL study starting from 2.1M hours of unconstrained broadcast audio. We propose automatic speech recognition (ASR) confidence as a proxy for pretraining data quality and show 3-7% relative WER improvements over LID-based filtering despite a smaller training set. We further address the lack of controlled architectural comparisons in speech SSL by evaluating Transformer, Macaron-Net, Conformer, and E-Branchformer at matched parameter budgets. Our models improve upon prior Finnish SSL baselines, particularly at Base scale and out-of-domain.
-#### How Should We Evaluate Naturalness for Synthetic Speech with a Foreign Accent?
- - **Authors:** Kentaro Onda, Satoru Fukayama, Daisuke Saito, Nobuaki Minematsu
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13175
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13175
-
- - **Abstract**
- Recent advances in speech synthesis technology have enabled the generation of speech with diverse characteristics. One such characteristic is a foreign accent. In our preliminary experiments, we found that UTMOS, a widely used automatic speech quality assessment system, tended to assign lower scores to speech with stronger foreign accents, even though it is produced by a human speaker. This observation raised a question: How do humans evaluate the naturalness of foreign-accented speech? We conducted a large-scale subjective evaluation involving both native and non-native listeners under different evaluation instructions. The results showed that humans also considered accentedness when evaluating naturalness, but that defining naturalness in terms of human-likeness and selecting raters who have greater exposure to the target accent may enable more appropriate evaluation. This study aims to provide a starting point for future discussions on fairer and more appropriate evaluation of synthetic speech with a foreign accent.
-#### VoxAnon: A balanced dataset for a fair evaluation of speech anonymization
- - **Authors:** Orane Dufour, Paul Magron, Mickael Rouvier
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13313
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13313
-
- - **Abstract**
- Speech anonymization is evaluated with automatic speaker verification attackers whose performance depends on the attribute distribution of both their training and evaluation data, which may bias privacy estimates for some speaker groups. To alleviate this issue, we introduce VoxAnon, a dataset built from VoxCeleb1 and 2 with training and evaluation splits balanced across gender, age, accent, and pitch. We extract and cross-check attributes using two complementary methods, balance trial lists per subgroup, and draw test/enrollment utterances from distinct video sources in order to limit linguistic and session bias. Comparing VoxAnon with unbalanced training and test data across four attackers and three anonymizers, we show that attribute imbalance changes which subgroups appear hardest to re-identify, in directions that depend on the attribute. In the balanced setting, residual disparities persist, mostly tied to accent and pitch, and depend on the anonymizer/attacker pair. Code and trial lists are publicly available.
-#### Oído: Open-Vocabulary Speech Recognition on a $5 Microcontroller without a Neural Accelerator
- - **Authors:** Daniel Varela Sánchez, Guillermo Martín-Coello Juárez
- - **Subjects:** Subjects:
-Sound (cs.SD); Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13447
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13447
-
- - **Abstract**
- Speech recognition on low-cost microcontrollers is, in practice, limited to keyword spotting or a fixed list of commands. We present Oído, an inference engine that runs open-vocabulary English speech recognition entirely on an ESP32-S3 (240 MHz dual-core Xtensa LX7, 512 KB of SRAM, 8 MB of PSRAM, 16 MB of flash, no neural accelerator). Oído executes a 13M-parameter Conformer-CTC model with int8 weights, per-frame dynamic int8 activations and int8 attention on the chip's SIMD instructions, with a schedule designed around flash and PSRAM bandwidth. On LibriSpeech test-clean/test-other the on-device arithmetic reaches 3.70%/8.23% word error rate (WER), within 0.12 points of full precision, and 3.33%/7.15% with an on-chip 1.3M-parameter language model; a transducer head gives 2.99%/6.67% and an int4 variant fits in 8.3 MB. This is 2.3-2.8x fewer errors than the vendor's recognizer on the same chip, and fewer than Whisper this http URL and Moonshine tiny in full precision on a laptop, including in real noise and reverberation. Measured on a physical board, the firmware runs at 1.97x the duration of the audio on one core, with transcripts identical to an instruction-exact emulator: accurate, but not yet real time (a 4 s command is transcribed about 8.7 s after it ends). The two-core schedule gives wrong results on silicon and is disabled. A streaming variant shows partial text while the speaker talks and delivers the final text 4.1-11.1 s after clips of 3.6-10.6 s (7.2-22.4 s in utterance mode) at 4.86%/11.03% WER; a Spanish model makes 34-60% fewer errors than multilingual Whisper tiny. Code and models are released.
-#### Phonology-Aware Speaker Extraction Frontend for Audio LLMs
- - **Authors:** Yanxiang Chen, Haoyuan Deng, Jinyu Wang, Hongyi Chen, Dingshan Li, Runlin Huang, Weifeng Su
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13500
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13500
-
- - **Abstract**
- Target speaker extraction (TSE) is a key frontend for enabling audio large language models (LLMs) to recognize and understand a designated speaker in overlapping speech. However, multilingual mixtures exhibit heterogeneous extraction demands, causing fixed-depth systems to either under-process challenging inputs or waste computation on inputs that have already converged. Existing TSE frontends generally apply uniform computation, while Audio-LLM adaptation methods neither explicitly model language-conditioned extraction demands nor preserve plug-and-play compatibility with frozen downstream models. We therefore propose LATTE, a lightweight 5.2M-parameter frontend that combines an acoustic Difficulty Estimator, a task-adaptive phonology-informed prior learned from multi-depth TSE gains, and an Adaptive Hourglass Extractor to route each mixture without requiring language identity at inference. On PolyExtract, LATTE achieves a macro SI-SNRi of 15.07 dB at 0.30 GFLOPs, retaining performance within 0.09 dB of a 0.53-GFLOP fixed-depth model while reducing computation by 43.4%, and lowers the average WER from 16.8% to 14.6% relative to TF-GridNet. By jointly modeling sample-level extraction demands and phonological structure, LATTE provides a practical framework for quality-aware, compute-efficient multilingual TSE and offers a scalable path toward robust Audio-LLM deployment.
-#### Lossless Inference Acceleration for ASR via EAGLE-Style Speculative Decoding
- - **Authors:** Sen Zhang, Xianghu Yue, Yiming Chen, Wenhuan Lu, Jianguo Wei, Haizhou Li
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13506
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13506
-
- - **Abstract**
- Autoregressive Transformer and Conformer models have achieved state-of-the-art performance in automatic speech recognition (ASR). However, their sequential token generation mechanism imposes a significant bottleneck during decoding, resulting in substantial inference latency. While speculative decoding has emerged as a promising lossless acceleration technique, existing ASR-oriented approaches either suffer from low draft acceptance rates due to suboptimal draft quality or rely on specially designed external draft models, which limit their generality and practicality. To overcome these limitations, we propose EAGLE-ASR, a novel framework that accelerates ASR inference via EAGLE-style speculative decoding while strictly preserving lossless output quality. Specifically, we introduce Speech-Draft, a lightweight autoregressive module that serves as a universal draft model by jointly leveraging encoder acoustic features and hierarchical decoder representations from the target ASR model. Furthermore, we adopt a multi-step generation strategy with self-distilled data to train the Speech-Draft, enabling it to better approximate the target model's output distribution and maintain causal consistency during multi-token generation. Extensive experiments on representative Whisper and Conformer AED models demonstrate that EAGLE-ASR achieves significant lossless speedups of up to $1.9\times$ and $2.4\times$, respectively, consistently outperforming existing speculative decoding baselines for ASR. Our proposed framework further generalizes effectively to multilingual ASR and speech translation tasks, establishing EAGLE-ASR as a practical and universally applicable solution for accelerating modern ASR systems without compromising recognition accuracy.
-#### AudioTETRIS: Token Elimination via Transitional Importance Signals for Efficient Audio LLMs
- - **Authors:** Shreya Sajid, Anna Vettoruzzo, Joaquin Vanschoren
- - **Subjects:** Subjects:
-Sound (cs.SD); Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13600
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13600
-
- - **Abstract**
- Large Audio Language Models (LALMs) achieve strong performance on speech-text tasks, but standard audio encoders produce hundreds of tokens for even short audio clips. Because self-attention scales quadratically in sequence length, this inflates inference-time compute substantially. Current training-free token compression methods prune or merge tokens based solely on coarse attention or feature similarity. However, treating audio tokens as generic, isotropic features smooths over spectral transitions, destroying fine-grained phonetic transitions essential for decoding speech. In contrast, speech signals exhibit highly structured temporal patterns where information density peaks at acoustic transitions. We propose AudioTETRIS, a training-free, two-stage framework that uses the audio encoder's representation geometry as an acoustic prior for token importance before applying attention-based compression. Instead of discarding encoder structure after the encoding stage, AudioTETRIS propagates this prior directly into the LLM decoder to compute a per-token fused score. This score drives progressive top-$k$ token selection across decoder layers without requiring additional training or auxiliary models. Evaluated on Qwen2-Audio-7B, Phi-4-Multimodal, and Audio Flamingo 3, AudioTETRIS retains near-uncompressed performance on several speech tasks using only 25% of audio tokens, matches or surpasses full-token accuracy at moderate compression rates, and consistently outperforms existing training-free baselines.
-#### Enhancing Speech Recognition through Text-to-Speech and Voice Conversion Augmentation
- - **Authors:** Yunus Emre Ozkose, Ali Haznedaroglu
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.13662
-
- - **Pdf link:** https://arxiv.org/pdf/2610.13662
-
- - **Abstract**
- Given the challenges associated with obtaining large volumes of real-world audio, the advancement of Automatic Speech Recognition (ASR) systems increasingly depends on synthetic data. This study focuses on the call center-banking domain, providing a targeted analysis of ASR models in this context. We evaluate real and synthetic datasets, using Word Error Rate (WER) and Character Error Rate (CER) as metrics, and employ a speech quality model to assess the impact on ASR performance. Our research compares Text-to-Speech (TTS) and advanced voice conversion methods, including KNNVC, Seed-VC, and Vec2Wav2, revealing significant improvements in speech quality and ASR accuracy, particularly with Seed-VC. Additionally, our domain-specific experimentation provides insight into the unique challenges and opportunities that arise when applying ASR technologies to industry-relevant settings. This highlights the potential of voice conversion technologies to enhance ASR systems, guiding future research in diverse linguistic scenarios, and paving the way for the broader application of ASR innovations across various fields.
+ Multimodal Emotion Recognition (MER) aims to understand human emotions by integrating information from multiple modalities such as speech and text. Psychological studies suggest that emotions exhibit latent hierarchical structured relationships in their semantic representations. However, most MER approaches rely on Euclidean representations, which capture fine-grained cross-modal interactions but do not explicitly provide a geometric prior for organizing hierarchical emotional structures. To mitigate this gap, we propose GeoMER, a joint Euclidean-Hyperbolic modeling framework that introduces hyperbolic emotion-core routing to capture higher-level, abstract emotional representations for MER. The proposed framework jointly models token-level cross-modal semantic interactions and latent emotion representations in two complementary geometric spaces. Specifically, GeoMER consists of a Euclidean Multimodal Fusion Module (EuclFusion) for multimodal representation fusion and a Hyperbolic Geometric Core Routing (HypGeoRoute) module that performs geometry-aware core assignment and aggregation in a hyperbolic manifold to capture more abstract feature representations. The HypGeoRoute module complements the Euclidean token-level modeling. We experiment on the IEMOCAP multimodal MER benchmark and demonstrate that the proposed method achieves the best performance, with 83.54% weighted accuracy and 83.35% unweighted accuracy, outperforming Euclidean baselines, including MemoCMT.
 
 
 by Zyzzyva0381 (Windy). 
 
 
-2026-10-13
+2026-10-14
