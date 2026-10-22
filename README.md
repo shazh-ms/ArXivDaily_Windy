@@ -1,4 +1,4 @@
-# Showing new listings for Wednesday, 21 October 2026
+# Showing new listings for Thursday, 22 October 2026
 Auto update papers at about 2:30am UTC (10:30am Beijing time) every weekday.
 
 
@@ -13,110 +13,90 @@ Keyword list: ['text-to-speech', 'text to speech', 'tts', 'LLM-based', 'speech',
 Excluded: []
 
 
-### Today: 10papers 
-#### The Impact of Side Information on Voice Privacy
- - **Authors:** Eulalie Thiombiano, Martha Larson, Vincent Colotte, Emmanuel Vincent
+### Today: 8papers 
+#### XingChen-UniFE: A Unified Generative Speech Front-End via Complementary Acoustic-Semantic Modeling
+ - **Authors:** Kelan Kuang, Qihan Hu, Jian Kang, Jie Li, Yongxiang Li, Yi Liu
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Multimedia (cs.MM); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.26884
+Audio and Speech Processing (eess.AS); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29164
 
- - **Pdf link:** https://arxiv.org/pdf/2610.26884
+ - **Pdf link:** https://arxiv.org/pdf/2610.29164
 
  - **Abstract**
- Currently, voice-related privacy risks are studied under the assumption that the attacker has access only to spoken audio. In contrast, real-world collections often pair the speech signal with side information; yet to our knowledge, no publicly available dataset provides sufficiently detailed and directly linkable speech and side-information pairs to evaluate the combined risk. We propose a distribution-constrained method to build a semi-synthetic dataset and study singling out risk when geographic side information is assumed to accompany anonymized speech. We instantiate it using the English portion of Mozilla Common Voice and the 2021 UK Census, under ignorant and semi-informed attackers, and introduce a conditional reference that isolates the contribution of the audio beyond the candidate-set reduction induced by the side information. In our controlled geographic case study, for single-utterance speakers, the semi-informed attacker reaches an observed isolation probability of 0.718 in the finest OA-plus-household setting, compared with 0.380 in the signal-only setting; its excess over the conditional reference increases from 0.012 to 0.340. The ignorant attacker shows the same trend at a lower level. The effect is largest at fine granularity and short recordings, precisely the setting in which signal-only evaluation looks safest. Our results show that geographic side information can increase the singling out risk of anonymized speech, and we recommend including attacker settings with side information in future studies of voice privacy.
-#### Disentangling Depression from Cognitive Decline in Elderly Speech Using Concurrent Clinical Assessments
- - **Authors:** Woori Jeon, Seunghee Ha, Sang-Kyu Lee, Ji Hye Yoon, Tae-Jin Yoon, Seung Jin Lee, Woojae Han, Jungmin So
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.26890
-
- - **Pdf link:** https://arxiv.org/pdf/2610.26890
-
- - **Abstract**
- Detecting depression from speech in elderly patients with mild cognitive impairment (MCI) is complicated by overlapping acoustic effects of cognitive decline. Without disentangling these, classifiers risk learning cognitive rather than depression-specific patterns. We present a Korean elderly speech corpus of 89 MCI speakers collected over three years with concurrent depression (SGDS) and cognitive (MMSE) assessments. Both linear mixed-effects models and partial correlations identify the same pattern: of seven feature groups, only formant features are associated with depression after controlling for cognitive function, while widely used F0 features carry no signal. The F1+F2 subset achieves UAR 0.760 with just 12 features, outperforming both the full eGeMAPS baseline and self-supervised representations. These findings show that concurrent clinical assessments can identify interpretable, depression-specific acoustic markers in populations where cognitive and affective symptoms co-occur.
-#### PW-Pruning: Phase-Aware Expert Selection for Speech-Centric Omni-Modal Models
- - **Authors:** Junjie Cao, Fengping Tian, Wenjie Zhou, Xuanfan Ni, Chenyang Lyu, Siyou Liu, Longyue Wang, Weihua Luo
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.26891
-
- - **Pdf link:** https://arxiv.org/pdf/2610.26891
-
- - **Abstract**
- Sparse routing reduces per-token computation but leaves the full expert bank resident in memory. We study expert pruning for speech-centric omni-modal models, where pooling calibration statistics can obscure the different expert demands of acoustic-input processing and text-answer generation. We propose PW-Pruning, a phase-aware extension of DO-ACP that constructs separate importance-weighted kernels for acoustic-prefill and teacher-forced answer tokens, then combines phase-weighted log-determinant marginal gains to select one static expert bank. On Qwen3-Omni, retaining 32 of 128 experts per layer improves MMAU-mini and MMSU accuracy over matched pooled selection by 3.20 and 4.38 percentage points, respectively, after supervised fine-tuning, averaged over three runs. Single-phase and shuffled-label controls on this public backbone suggest that semantic phase information contributes to these gains. Experiments on a non-public Qwen3.5-Omni backbone and English-only zero-shot evaluation of Nemotron provide complementary evidence. Across the tested Qwen budgets, AU gains are larger under stronger pruning, without inference-time mask switching.
-#### ShlokaDhara: A Multi-Speaker Sanskrit Speech Corpus for Learning Meter-Aware Prosody in Text-to-Recitation
- - **Authors:** Harshal Kausadikar, Onkar Kishor Susladkar, Prathmesh Santosh Choudhari, Vedangi Deepak Deshpande, Ismini Lorentzu, Sparsh Mittal
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Machine Learning (cs.LG); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.26929
-
- - **Pdf link:** https://arxiv.org/pdf/2610.26929
-
- - **Abstract**
- Sanskrit verse recitation is governed by $\textit{Chandas}$, a strict prosodic framework defined by rhythmic $\textit{Laghu}$ (light) and $\textit{Guru}$ (heavy) syllables. Because existing Sanskrit speech datasets prioritize ASR or conversational TTS, they lack the metrical fidelity required for authentic verse synthesis. We introduce $\textbf{\textit{ShlokaDhara}}$, a 43-hour, multi-speaker Sanskrit speech corpus capturing diverse meters, recitation styles, and melodic variations. We specifically focus on $\textit{Text-to-Recite}$, a synthesis task explicitly requiring both prosodic accuracy and metrical correctness. Benchmarking state-of-the-art TTS architectures via an automated UTMOS (neural MOS) predictor demonstrates that XTTS-v2 achieves the highest perceptual quality. We further validate the XTTS-v2 generated samples using two paradigms: subjective assessments by 16 Sanskrit experts and novel empirical metrics, specifically, syllable-level $\textit{Laghu-Guru}$ duration analysis to objectively quantify structural metrical awareness. Ultimately, this work establishes a robust dataset and evaluation benchmark for prosody-aware computational Sanskrit recitation. Generated Samples: this https URL
-#### RealComm: Benchmarking and Adapting Audio Deepfake Detection over Real Communication Channels
- - **Authors:** Li Wang, Jindong Wang, Wan Lin, Kunyu Feng, Yufan Lin, Lei Wang, Rizhao Cai, Ce Fang, Jinzhe Xue, Jie Shi, Haizhou Li, Zhizheng Wu
+ This paper presents XingChen-UniFE, a unified large audio language model (LALM) for general speech restoration (GSR) and target speaker extraction (TSE). The proposed model employs complementary semantic and acoustic representations through a dual-stream encoder, where a self-supervised learning model provides hierarchical semantic features and a learnable acoustic branch captures fine-grained structures from complex spectra. A bidirectional cross-attention module further facilitates information exchange between the two representations. The fused representation conditions the LALM for discrete speech token generation with task and speaker information. Experiments demonstrate strong performance on both GSR and TSE and robust generalization to unseen degradation conditions.
+#### Optimized Compressor Parameterization for Produced Music in Hearing Aids
+ - **Authors:** Robin Holland, Christoph Hoog Antink, Henning Puder
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.27459
+ - **Arxiv link:** https://arxiv.org/abs/2610.29613
 
- - **Pdf link:** https://arxiv.org/pdf/2610.27459
+ - **Pdf link:** https://arxiv.org/pdf/2610.29613
 
  - **Abstract**
- Acoustic capture, device processing, and transmission coding in real calls jointly alter speech signals and may affect the reliability of audio deepfake detection. To systematically evaluate these effects, we introduce RealComm, a dataset pairing digital speech with recordings of the same utterances transmitted through real mobile calls. The acquisition design covers acoustic and wired injection, handset and speakerphone operation, and caller-side denoising, with bona fide and synthetic speech recorded under matched conditions. The dataset includes RealCommBench for evaluation and RealCommTrain for adaptation. We further develop RealComm-Aug, a staged waveform augmentation pipeline for simulating acquisition and transmission effects, and investigate its combination with real-call training. Experiments with existing detectors reveal substantial degradation after call transmission, even for models with strong digital-domain performance; acoustic injection is particularly challenging. Paired quality and spectral analyses show that quality degradation is associated with poorer detection across recording conditions for the evaluated detectors, while high-frequency attenuation alone does not explain detection difficulty. Simulated augmentation and real-call training provide complementary benefits, with their combination achieving the lowest call-domain error for each of three evaluated detectors. For Teffic-Audio, the equal error rate decreases from 37.94% to 22.37%. The demo and benchmark access information are provided through the project repository.
-#### VISH-ASR: Viterbi-Guided Selection of Hotwords for Speech-LLM Contextual ASR
- - **Authors:** Xiaoyu Gu, Yu Xi, Chencheng Wang, Zonghan Zhou, Haoyu Li, Jing Peng, Kai Yu
+ Hearing aid compression is typically designed for speech, yet music demands different trade-offs due to its narrower dynamic range (DR) and impulsive transients. This paper investigates whether music fitting benefits from being signal-aware, both in mapping compression demand across signal-audiogram conditions and in tuning its parameters to these combinations rather than inheriting them from speech-derived prescriptions. Compression demand is characterized across eight audiometric profiles, three residual DR severities, and three produced music signals under linear gain. Signal dynamics emerge as a first-order factor: production-compressed music fits the residual DR of the mild-to-moderate profiles evaluated, while dynamically rich recordings challenge even moderate hearing loss. Per-signal optimization of single- and multi-band wide dynamic range compression is then applied to two profiles with the highest compression demand. This optimization improves the Hearing Aid Audio Quality Index over gain-optimized NAL-NL2 baselines while also improving audibility, indicating substantial headroom for music-specific fitting.
+#### NeuroCodec: EEG-Guided Latent-Domain Generative Model for High-Fidelity Target Speaker Extraction
+ - **Authors:** Julian Silva, Jaliya Kodithuwakku, Navindu Sirimanna, Shaveen Herath, Wageesha N. Manamperi, Joshua P. Kulasingham
  - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Human-Computer Interaction (cs.HC)
- - **Arxiv link:** https://arxiv.org/abs/2610.27867
+Audio and Speech Processing (eess.AS); Machine Learning (cs.LG)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29815
 
- - **Pdf link:** https://arxiv.org/pdf/2610.27867
-
- - **Abstract**
- Prompt-based contextual ASR requires selecting a compact hotword subset from large dynamic inventories, yet existing pre-selection methods rely either on discrete ASR hypotheses that may discard acoustic evidence or on separately trained retrieval models. We propose Viterbi-guided Selection of Hotwords (VISH), a training-free, plug-and-play framework that directly verifies candidate-specific acoustic support over frame-level CTC posteriors. VISH formulates pre-selection as constrained posterior search; M-VISH makes large-list verification scalable through frame-synchronous shared-prefix Viterbi search with bounded top-K pruning, while Bi-MVISH exploits complementary backward evidence for robust verification. Across five benchmarks, M-VISH achieves up to 11.7% absolute improvement in Best-F1 over a strong learned-retrieval baseline and reduces candidate-search latency by 75.2% at 2,000 candidates relative to hypothesis-based filtering. These results demonstrate the effectiveness of posterior-level verification for accurate and scalable hotword pre-selection without additional model training.
-#### Multimodal Ambivalence and Hesitancy Recognition with Bidirectional Audio--Text Cross-Attention
- - **Authors:** TingTing Gu, JinCheng Luo, WenQiu Guo
- - **Subjects:** Subjects:
-Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.26868
-
- - **Pdf link:** https://arxiv.org/pdf/2610.26868
+ - **Pdf link:** https://arxiv.org/pdf/2610.29815
 
  - **Abstract**
- Ambivalence and hesitancy (A/H) are subtle behavioural states that can be expressed through both what a person says and how it is spoken. This paper presents an audio--text framework for video-level A/H recognition. Full-video transcripts and speech waveforms are encoded using pre-trained multilingual BERT and wav2vec~2.0, respectively, and projected into a shared representation space. Two stacked bidirectional cross-attention blocks allow linguistic tokens to attend to acoustic frames and acoustic frames to attend to linguistic context without requiring explicit temporal alignment. The resulting sequences are aggregated through masked mean pooling and combined using concatenation, element-wise products, and absolute differences for binary classification. We evaluate the model on the subject-independent split of the Behavioural Ambivalence/Hesitancy (BAH) dataset. The proposed system achieves 72.19\% accuracy, 75.00\% precision, 81.13\% recall, 77.95\% A/H F1-score, and 70.16\% Macro-F1 on the test set. These results demonstrate the potential of jointly modelling linguistic and acoustic information for automatic A/H this http URL at:this https URL.
-#### Commanding at the Speed of Sound: Audio-Centric Referring Expression Segmentation for Aerial Scenes
- - **Authors:** Fan Liu, Ziyun Chen, Yijun Wang, Chuanyi Zhang, Liang Yao, Yuexuan An, Xiang Gu, Pai Peng
- - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS); Image and Video Processing (eess.IV)
- - **Arxiv link:** https://arxiv.org/abs/2610.26872
-
- - **Pdf link:** https://arxiv.org/pdf/2610.26872
-
- - **Abstract**
- Referring expression segmentation (RES) aims to localize targets at the pixel level guided by human instructions. However, current models predominantly follow a text-centric paradigm that treats discrete text as the primary interaction medium for these human instructions. This assumption is especially limiting in unmanned aerial vehicle (UAV) applications, where rapid response, hands-free operation, and natural communication are often critical. In this paper, we reconstruct UAV referring expression segmentation through an audio-centric perspective. Grounded in information theory, we demonstrate that raw audio provides a higher upper bound for extracting rich semantic features than transcribed text. To achieve this, we construct an audio-driven UAV referring expression segmentation benchmark named Aerial-AudioRES by augmenting VisDrone with synthesized speech, forming "audio-text-image-mask" quadruples. Specifically, we employ an ambiguity filtering mechanism to ensure referential uniqueness, and incorporate eight distinct timbres alongside 4 realistic noises to simulate authentic environments. To drive the paradigm shift from text-centric to audio-centric, we propose the end-to-end Audio-centric Referring Expression Segmentation Network (ARES-Net). Distinct from discrete text-visual matching, our approach learns to establish a direct soft alignment between continuous acoustic manifolds and multi-scale visual representations. Comprehensive experiments show that our method obtains a peak accuracy of 64.23% in oIoU and demonstrates robust generalization on a collected real-human test set. Furthermore, it significantly reduces total inference latency to one-third of the text-based method. Our code is publicly available.
-#### Mixture of Phonetic Experts Based Low-Rank Adaptation of Conformer Models for Accented English Speech Recognition
- - **Authors:** Santosh Dahal, Anmol Guragain, Tianchi Liu, Luis Fernando D'Haro, Kiran Chandra Dahal
+ Driven by recent advancements in hearing assistive devices, target speaker extraction (TSE) in multi-talker environments has drawn significant attention. To address this, hearing technologies identify attention using neural signals recorded via electroencephalography (EEG) to guide TSE, enabling neuro-steered auditory attention decoding. However, most existing techniques rely on time-frequency masking, which suffers from low fidelity in spectro-temporally overlapping regions and is often restricted to narrowband audio. In contrast, we introduce NeuroCodec, which, to the best of our knowledge, is the first generative EEG-guided TSE framework operating in the latent space of a neural audio codec. Specifically, NeuroCodec models spatial EEG dependencies via graph convolutions and fuses cross-modal EEG and speech representations through attention mechanisms and Mamba-based temporal modeling. We further introduce a six-phase training curriculum that progressively incorporates latent reconstruction, multi-scale spectral, and adversarial objectives to ensure stable, high-fidelity speech generation. Experiments on the public Cocktail Party and KUL datasets show NeuroCodec outperforms baselines, across several perceptual metrics. A listening experiment with 20 participants validated that NeuroCodec offers greater perceptual accuracy, achieving a mean score of 82.24 compared with 49.63 for M3ANet. Additionally, the proposed method is seen to enable 44.1 kHz reconstruction with spectral content extending up to 20 kHz, further supporting the perceptual results. Finally, we extend NeuroCodec with a causal streaming formulation suited for real-time processing, providing a basis for hearing assistive devices.
+#### How Far Can the Gemma 4 Speech Encoder Go Without Changing Its Weights? Saudi and Gulf Arabic Speech Recognition with a Frozen and an Adapter-Augmented Encoder
+ - **Authors:** Amr Abdelkhalik
  - **Subjects:** Subjects:
 Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.26888
+ - **Arxiv link:** https://arxiv.org/abs/2610.28673
 
- - **Pdf link:** https://arxiv.org/pdf/2610.26888
+ - **Pdf link:** https://arxiv.org/pdf/2610.28673
 
  - **Abstract**
- We present Mixture of Phonetic Experts based Low-Rank Adaptation (MoPE-LoRA), a parameter-efficient adaptation framework for accented English speech recognition. Recent mixture-of-experts approaches typically allocate experts per accent, implicitly treating accent identity as the primary axis of variation. In contrast, we organize adaptation along phonetic categories, motivated by the observation that accent differences are often expressed as systematic distortions of phoneme realization. MoPE-LoRA introduces a fixed set of six low-rank experts aligned with manner-of-articulation classes and performs frame-level routing through a hybrid mechanism that combines phoneme supervision with learned acoustic gating. Because the expert set is shared across accents, the model does not require accent-specific modules and naturally extends to previously unseen accents. Experiments on L2-ARCTIC show that MoPE-LoRA consistently improves over single LoRA and full fine-tuning. In zero-shot evaluation where one accent is held out during training, the proposed method yields a 12.3% relative improvement over single LoRA. These results indicate that phonetic-category-based decomposition offers a scalable and transferable alternative to accent-level adaptation.
-#### Beyond Two Tracks: Speaker-Anchored Full-Duplex Dialogue Recovery
- - **Authors:** Yuxuan Chen, Yang Xiao, Jack Sun, Chak Sun, Brick Li, Sam
+ We study the 305M-parameter audio encoder shared by Gemma 4 and EmbeddingGemma 2 (identical except for its final projection) for Saudi and Gulf Arabic speech recognition, without changing any of its weights. A frozen system trains only a 22.6M-parameter CTC reader over a mix of encoder layers; an adapted system adds 3.1M low-rank adapter parameters, a 41.5M-parameter hybrid CTC/attention reader and joint decoding with a sub-word language model. Against Cohere Transcribe Arabic (2.07B parameters), re-run on identical audio, the frozen system trails in word error rate (WER) but is statistically indistinguishable in character error rate (CER) on five of six human-labelled conditions, while running 3.4 times faster on CPU with greedy decoding. The adapted system is statistically indistinguishable in WER on a public Saudi customer-service call (19.20% against 19.27%) and on clean Emirati speech, is significantly better on telephone-coded Emirati speech, has a significantly lower CER on all six conditions of these sets, and beats a 0.6B recogniser fine-tuned on SADA in WER on all six; it still trails Cohere in WER on long-form Saudi speech. On a blind, human-corrected public call-centre sample it ranks 4 of 15 systems, behind three commercial APIs (significantly only one) and ahead of the other self-hostable systems by point estimate. An optimised joint decoder runs it at 139 times real time on one GPU. We also show that references made by correcting machine drafts favour the drafting system. Code and public-set results are released.
+#### Decodability Is Not Controllability: Local and Anisotropic Speaker Control in Continuous-Latent TTS
+ - **Authors:** Yuanzhong Zheng, Wei Huang, Ming Ma, Kailun Jin, Youhai Jiang
  - **Subjects:** Subjects:
-Sound (cs.SD); Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.27109
+Sound (cs.SD); Computation and Language (cs.CL); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29345
 
- - **Pdf link:** https://arxiv.org/pdf/2610.27109
+ - **Pdf link:** https://arxiv.org/pdf/2610.29345
 
  - **Abstract**
- Spoken interaction is moving from alternating turns to full-duplex conversation, where an agent listens while speaking. Learning this coordination requires natural dialogue with persistent speaker-resolved tracks, a data requirement that remains difficult to satisfy at scale. Generative recovery offers a route from ordinary recordings, but recovering two voices is not enough: their track assignments can drift as the conversation unfolds. We address this missing link with speaker-anchored routing before diffusion: a 1.84M-parameter module matches the separator's coarse streams to fixed enrollment identities and orders them before a frozen generator reconstructs the speech, without retraining the generator or altering the reconstructed audio. On 25-minute remote conversations, routing cuts wrong-track time from 43.9% to 4.1%, below the 6.2% of matched-enrollment waveform re-identification, with its largest advantage when one participant holds the floor (17.8% versus 28.6%), and raises fixed-track activity F1 from 0.46 to 0.84 while per-chunk reconstruction quality is unchanged. The same router transfers to unseen face-to-face and telephone recordings, and a margin-gated verification step brings their wrong-track time to 0.9-1.7% while embedding 20-36% of the output, where full re-identification embeds all of it. Recovered voices thus become the participant-consistent tracks that full-duplex dialogue modeling needs. Audio examples: this https URL
+ High linear decodability does not entail causal controllability in continuous-latent text-to-speech (TTS). In VoxCPM2, position-matched probes and equal-norm interventions across 30 speakers and 60 directed dyads expose this separation: reference-audio states at the final residual acoustic language model layer (RALM L7) retain 0.970 probe accuracy, yet aligned edits yield 0/60 target-dominant dyads. Edits at early reference-audio positions produce the opposite pattern. At L0, pair-aligned updates increase target similarity by 0.326 and achieve target dominance in all 60 dyads, against at most 1/60 under any equal-norm direction or position control. Independent speaker encoders, retrieval against held-out speaker prototypes, and double-blind listening confirm that the shifted voice is heard as the intended target. Cross-architecture interventions in this http URL distinguish backbone leverage from direct acoustic control: backbone edits displace the source without target attraction, while x-vector ablation reduces source similarity from 0.849 to 0.006. These findings identify two requirements for training-free speaker control: geometric specificity and a computational route that carries the intended speaker condition into acoustic synthesis.
+#### Closed-Loop Dual-Reference Guidance for Accent Control in Cross-Lingual Voice Cloning
+ - **Authors:** Yuanzhong Zheng, Wei Huang, Ming Ma, Kailun Jin, Youhai Jiang
+ - **Subjects:** Subjects:
+Sound (cs.SD); Computation and Language (cs.CL); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29351
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.29351
+
+ - **Abstract**
+ Zero-shot cross-lingual voice cloning often carries the reference speaker's accent into the target language. We propose closed-loop dual-reference guidance, which pairs the original reference with a reusable native anchor constructed by voice conversion (VC). The references initialize separate language-model (LM) states that guide a shared acoustic trajectory; each completed patch then updates both states, keeping their generated histories aligned with the emitted speech. Anchor construction runs once per speaker, and online synthesis uses a frozen TTS model without per-utterance VC. On 20 held-out French speakers, the fixed setting $\lambda^{\!*}=0.33$ reduces residual French LID mass by 73\% versus direct cloning, at an ECAPA similarity cost of only $0.042$; relative to anchor-only cloning, it recovers $0.155$. The method achieves the lowest mean WER ($0.009$) and highest mean GOP ($4.750$) among the held-out test arms. In blinded preference tests, native-English listeners favor it over direct cloning on pronunciation naturalness, and over both anchor-only cloning and a TTS$\to$VC cascade on speaker identity. Online RTF is approximately 26\% lower than the cascade's ($0.59$ vs.\ $0.80$), and the same setting reduces Spanish LID mass by 56\% without re-tuning.
+#### RubatoCodec: Budgeted Adaptive Speech Tokenization with Streaming Decoding
+ - **Authors:** Chihiro Arata, Shohei Taniguchi, Gouki Minegishi, Kan Hatakeyama-Sato
+ - **Subjects:** Subjects:
+Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29434
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.29434
+
+ - **Abstract**
+ Neural speech codecs provide discrete tokens for speech generation. Lower frame rates shorten token sequences, but each token must then carry more linguistic and acoustic information. Variable-frame-rate codecs address this trade-off by adapting token allocation to speech content, but threshold-based allocation lets content determine the token count, so the sequence length a speech generator must produce varies across utterances and datasets at a fixed setting. We present RubatoCodec, a variable-frame-rate speech codec built on X-Codec-2 with an exact utterance-level event budget and streaming decoding. Its Adaptive Firing mechanism uses changes in codec features and waveform spectra to divide speech into variable-duration events without a learned boundary predictor. Discrete codes and an explicit duration represent each event, allowing a speech generator to predict and decode one event at a time. Controlled experiments show that adaptive allocation outperforms fixed-rate coding in reconstruction fidelity and intelligibility at low event rates. A model trained on large-scale multilingual speech achieves competitive reconstruction quality across English, Japanese, and Mandarin, with the best intelligibility preservation among the compared codecs on the evaluated English and Japanese benchmarks at comparable bitrates. In a matched text-to-speech comparison, the adaptive representation yields lower WER and higher UTMOS and UTMOSv2 with comparable speaker similarity. The speech generator also learns the codec's utterance-level event budget without an explicit generation-time rate constraint. These results demonstrate that budgeted adaptive speech representations support both high-quality reconstruction and streaming text-to-speech generation. Code and weights are available at this https URL and this https URL.
+#### Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition
+ - **Authors:** Pavlos Poulos, Katelyn Sadorf, Themos Stafylakis, Costas A. Anastassiou
+ - **Subjects:** Subjects:
+Sound (cs.SD); Artificial Intelligence (cs.AI); Neural and Evolutionary Computing (cs.NE); Audio and Speech Processing (eess.AS); Neurons and Cognition (q-bio.NC)
+ - **Arxiv link:** https://arxiv.org/abs/2610.29720
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.29720
+
+ - **Abstract**
+ Spiking Neural Networks (SNNs) promise energy-efficient inference through sparse, event-driven computation, yet remain constrained on continuous, context-dependent tasks such as automatic speech recognition (ASR). A key bottleneck is the Leaky Integrate-and-Fire (LIF) neuron, whose membrane decay erases information across pauses and phonetic boundaries while it must both extract features and retain long-range context. Inspired by cortical separation of nonlinear filtering and somatic integration, we introduce the Spiking Ternary GRU (stGRU): a ternary-weight gated recurrent unit performs temporal filtering, while downstream Resonate-and-Fire (RF) neurons generate the binary spike stream driving the next block's event pathway. This makes binary event transmission a native training constraint rather than a separate deployment-time activation quantization step; together with ternary weights, learned projections avoid dense floating-point matrix MACs. Trained end-to-end on LibriSpeech-960, Small, Medium, and Large stGRUs reach 8.09%, 7.04%, and $6.44 \pm 0.17\%$ WER on test-clean without an external language model. To our knowledge, these are the first matrix-MAC-free spiking networks without a learned ANN sequence decoder to achieve single-digit WER on LibriSpeech. The architecture also achieves 10.88% test CER on Aishell-1 (9.28% on dev) when trained from scratch. Internally, trained networks develop a depth-graded hierarchy: shallow layers act as fast acoustic filters, while deep layers form slower semantic integrators whose latent representations segregate into part-of-speech manifolds and word-level spike events. Deep-layer firing rates follow lognormal distributions with a sparsity gradient, mirroring hierarchical processing observed in human cortex in vivo. Our biologically grounded architecture combines competitive ASR with favorable modeled compute and memory cost.
 
 
 by Zyzzyva0381 (Windy). 
 
 
-2026-10-21
+2026-10-22
