@@ -1,4 +1,4 @@
-# Showing new listings for Monday, 26 October 2026
+# Showing new listings for Tuesday, 27 October 2026
 Auto update papers at about 2:30am UTC (10:30am Beijing time) every weekday.
 
 
@@ -13,140 +13,150 @@ Keyword list: ['text-to-speech', 'text to speech', 'tts', 'LLM-based', 'speech',
 Excluded: []
 
 
-### Today: 13papers 
-#### DRAMA-Eval: A Benchmark for Context-Aware, Multi-Turn, Multi-Speaker Speech Generation
- - **Authors:** Jingbin Hu, Zihang Yang, Xiaoge Peng, Haoyu Zhang, Ziyu Zhang, Qirui Zhan, Huakang Chen, Zhao Guo, Wenjie Tian, Kangxiang Xia, Wenkang Hou, Ruonan You, Zihan Liu, Chenyi Liao, Hongyu Lyu, Zihao Bai, Jinrui Liang, Shengming Lin, Yunxiang Chen, Houdun Liu, Su Feng, Bengu Wu, Liumeng Xue, Lei Xie
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Sound (cs.SD)
- - **Arxiv link:** https://arxiv.org/abs/2610.31796
-
- - **Pdf link:** https://arxiv.org/pdf/2610.31796
-
- - **Abstract**
- Recent advances in speech generation are shifting toward context-aware, multi-turn, and multi-speaker synthesis. While these capabilities are in high demand for applications such as audiobook and audio drama production, evaluation has not kept pace with these advances. Beyond traditional zero-shot Text-to-Speech (TTS), modern systems in this domain primarily fall into three categories: instruction-controllable generation models, multi-turn dialogue models, and the audio branches of audio-visual generation models. However, existing benchmarks evaluate these paradigms in isolation, failing to provide a unified assessment of context modeling, instruction following, and multi-speaker generation. Meanwhile, recent progress in audio understanding models has made it feasible to evaluate such complex scenarios using LLM-as-a-Judge approaches. To bridge this gap, we introduce DRAMA-Eval, a comprehensive benchmark for evaluating such systems. DRAMA-Eval utilizes structured script contexts and offers a holistic evaluation framework covering objective, local, and global aspects of generation quality, enabling the assessment of acoustic fidelity, sentence-level execution, and long-range coherence. We benchmark leading open-source and commercial models on a human?verified dataset. The results reveal critical weaknesses in long-range speaker consistency and implicit instruction following that require deep contextual understanding. To facilitate reproducible research, we release a 12-hour bilingual (Chinese-English) test set of manually corrected real-world scripts, accompanied by ground-truth audio, evaluation code, and benchmark results.
-#### Concentrated Causal Influence, Distributed Diagnostic Information: Cognitive Impairment Decisions in Large Audio-Language Models
- - **Authors:** Xiutian Zhao, Luqi Sun, Björn Schuller, Berrak Sisman
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Computation and Language (cs.CL)
- - **Arxiv link:** https://arxiv.org/abs/2610.32061
-
- - **Pdf link:** https://arxiv.org/pdf/2610.32061
-
- - **Abstract**
- Large audio-language models (LALMs) can assess cognitive impairment (CI) from speech, yet their answers reveal neither which internal components control the decision nor how much CI information is accessible in their representations. We investigate both questions through CI-contrast neurons (CICNs), selected by class-contrastive activation frequency in decoder MLPs. Across eight open LALMs and two corpora (Pitt and PROCESS-2), we causally test CICNs against size- and layer-matched random masks and activity-matched controls. In three of the five models that meet our eligibility criteria, ablation of small CICN sets causes large, class-directed prediction shifts; speech-identified masks also control transcript-only decisions, and three of four primary Pitt masks retain specificity on PROCESS-2. Position-restricted interventions locate the influence before the final answer position, most strongly after the speech or transcript evidence under letter-labeled options, largely as a decision-direction shift. Beyond causal localization, supervised linear readouts of frozen CICN activations achieve 0.92--0.97 AUC within Pitt, versus 0.67--0.84 for the models' direct answers. Matched random and all-neuron readouts reach comparable performance; top-ranked CICNs show only an exploratory advantage at very small unit budgets. These results distinguish concentrated causal control over output decisions from broadly distributed diagnostic information for CI detection in LALMs.
-#### NECTAR: Automatic Negative Clue Estimation via Centroid-Space Mapping for Target Speaker Extraction
- - **Authors:** Hyungjun Yoo, Yongjoon Lee, Jung-Woo Choi
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Signal Processing (eess.SP)
- - **Arxiv link:** https://arxiv.org/abs/2610.32133
-
- - **Pdf link:** https://arxiv.org/pdf/2610.32133
-
- - **Abstract**
- Target speaker extraction (TSE) aims to extract a desired speaker from a mixture using auxiliary clues such as enrollment speech. An interferer-related representation can provide a useful negative clue for TSE, but such information is not directly available from the target enrollment. To derive this representation from the observed mixture, we analyze the relationship between the speaker representations of a speech mixture and its constituent speakers. Our analysis shows that the mixture centroid lies near the midpoint of its constituent speaker centroids, whereas this relationship does not hold for single-utterance embeddings. Based on this observation, we propose NECTAR, NEgative Clue for TARget speaker extraction, which automatically derives an interferer-related negative clue from the mixture using the centroid-space relationship. We further introduce a Centroid-Space Mapper (CSM) to estimate the required centroid representations from a mixture and a target enrollment. NECTAR achieves the highest SI-SDRi on Libri2Mix among the compared systems trained on LibriSpeech train-clean-100, reaching 16.18 dB.
-#### MG-REPA: Multi-Granularity Representation Alignment for Generative Target Speaker Extraction
- - **Authors:** Dohwan Kim, Jung-Woo Choi
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI)
- - **Arxiv link:** https://arxiv.org/abs/2610.32161
-
- - **Pdf link:** https://arxiv.org/pdf/2610.32161
-
- - **Abstract**
- Generative target speaker extraction (TSE) models achieve high-quality extraction, but suffer from considerably slow training convergence. Representation Alignment (REPA) accelerates diffusion transformer training by aligning hidden states with a pre-trained Self-Supervised Learning (SSL) teacher. However, existing alignment in the speech and audio domain operates at a single granularity. For TSE, frame-level alignment leaves the global, time-invariant characteristics of the target speech implicit, whereas utterance-level alignment leaves the time-varying content implicit, even though extracting the target requires both. We propose Multi-Granularity Representation Alignment (MG-REPA), aligning the hidden states with an SSL model at the frame level and a speaker verification model at the utterance level. We further apply temporal normalization to the frame-level target, removing its utterance-level statistics so that each branch concentrates on its granularity. On Libri2Mix, MG-REPA reaches the OVRL and PESQ of a MeanFlow-TSE baseline with $3.0\times$ and $2.1\times$ fewer epochs, respectively. Trained for 750 epochs, it is competitive with the published 2,000-epoch baseline on intrusive metrics while improving non-intrusive metrics. An ablation demonstrates that MG-REPA outperforms alignment at a single granularity.
-#### Uni-Stream: A Unified Streaming Speech Language Model for Speech Synthesis and Recognition
- - **Authors:** Xuan Shi, Chang Zeng, Tiantian Feng, Ye Zhang, Jun Liu, Shih-Heng Wang, Lie Lu, Shrikanth Narayanan
- - **Subjects:** Subjects:
-Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI)
- - **Arxiv link:** https://arxiv.org/abs/2610.32187
-
- - **Pdf link:** https://arxiv.org/pdf/2610.32187
-
- - **Abstract**
- Unified streaming speech language models aim to support speech recognition and synthesis within a single model, enabling real-time human-computer interaction. However, jointly supporting these two directions of speech-text conversion while preserving task-specific performance remains challenging. We propose Uni-Stream, a unified streaming speech language model built on compact pretrained speech models. Uni-Stream processes interleaved text and speech in a streaming format and achieves performance comparable to task-specific models through two-stage training. We also develop a data annotation pipeline for streaming training and will publicly release the generated transcriptions and word-level timestamps. We further examine Uni-Stream's representations across tasks and modalities and find that speech and text residence in distinct latent feature space even when trained in a unified model architecture, while representations within each modality become more task-dependent in later layers.
-#### SURE-Tagger: Structured Speech Representations for Compositional Evaluation and Targeted Data Selection
- - **Authors:** Jing Peng, Huifei Wang, Weihan Chen, Shuo Gao, Bicheng Zhang, Junhao Du, Hanqi Li, Chaolei Liu, Wen Wen, Tao Liu, Xu Li, Yu Xi, Shuai Wang, Kai Yu
+### Today: 14papers 
+#### Beyond Accuracy: What Are Speech Emotion Recognition Models Learning?
+ - **Authors:** Prince Baah-Mensah, Dennis Owusu Asamoah
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32198
+ - **Arxiv link:** https://arxiv.org/abs/2610.33952
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32198
+ - **Pdf link:** https://arxiv.org/pdf/2610.33952
 
  - **Abstract**
- Speech conveys linguistic content, speaker characteristics, temporal interactions, paralinguistic cues, and acoustic environments. While recent speech captioning models describe these dimensions in natural language, inconsistent attribute coverage and ambiguous omissions hinder systematic analysis across recordings. We introduce SURE-Tagger, a framework that constructs semi-structured speech representations with explicit attribute values, supplementary descriptions, and abstention under insufficient evidence. By integrating specialist observations through language-model reasoning, SURE-Tagger enables speech conditions to be consistently identified and jointly queried across datasets. We further introduce Tag-Bench, combining real recordings with controlled, agentically synthesized speech scenes and verified attribute annotations. On Tag-Bench, SURE-Tagger achieves the highest scores on 25 of 29 evaluated dimensions for real speech and 24 of 29 for synthetic speech, outperforming caption-based baselines across structural and descriptive attributes. Beyond annotation, we use these representations to construct cross-dataset evaluation subsets and reveal condition-specific ASR errors. Using a separate candidate pool, SURE-Tagger-guided selection reduces the overall ASR error rate of Qwen3-ASR-1.7B by 14.3% relative to the unadapted model under a one-hour fine-tuning budget, while caption-guided and random selection increase error in the same setting. These results demonstrate how structured speech representations can connect rich annotation, compositional evaluation, and targeted model improvement.
-#### ICASSP 2026 Radar Acoustic Speech Enhancement (RASE) Challenge
- - **Authors:** Zhi-Wei Tan, V. G. Reju, Ritesh C. Tewari, Ruotong Ding, Patrick A. Naylor, Andy W. H. Khong
+ Speech Emotion Recognition (SER) is important in human-machine interactions, enabling machines to detect and classify human emotions from solely human speech. Speech emotion recognition (SER) benchmarks routinely report accuracies above 90 percent, yet these models fail when deployed or tested on diverse speakers. The papers overlook a fundamental issue: models may be learning speaker identity and tone rather than generalized emotional cues. We introduce a two-condition audit protocol that measures, for any published SER model, how much of its reported performance survives when speakers are held out. Each model is evaluated twice under identical architecture, features, and training recipe: a control condition that reproduces the common random-split practice, and a strict speaker-independent condition with disjoint speakers. We apply the protocol to seven model configurations from five published papers, spanning convolutional, recurrent, transformer, vision-transformer, and self-supervised wav2vec2 architectures, on RAVDESS, EMO-DB, and SAVEE, with a fourth corpus (EARS) as an external check. Across 21 model-dataset pairs, published headline numbers reproduce close to the control but drop by 6.9 to 63.1 percentage points under strict speaker independence. Our results quantify speaker memorization as a dominant, previously unmeasured component of published SER performance, and we recommend two-condition reporting as a community standard.
+#### ADReasoner: Acoustic-Linguistic Cue-Aware Reinforcement Learning for Explainable Alzheimer's Disease Detection from Speech
+ - **Authors:** Yin-Long Liu, Yuanchao Li, Jiahong Yuan, Zhen-Hua Ling
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32202
+ - **Arxiv link:** https://arxiv.org/abs/2610.34220
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32202
+ - **Pdf link:** https://arxiv.org/pdf/2610.34220
 
  - **Abstract**
- This paper presents the ICASSP 2026 Radar Acoustic Speech Enhancement (RASE) Grand Challenge, the first community challenge dedicated to benchmarking speech enhancement from millimeter-wave (mmWave) radar vibrometry. The challenge targets realistic through-glass sensing scenarios where microphones are ineffective or impractical. We introduce a curated dataset of paired radar and clean speech recordings, standardized preprocessing, a baseline system, and a secure Codabench-based evaluation framework with unified objective metrics. The RASE Challenge establishes the first public benchmark for radar-based speech enhancement and aims to foster reproducible research in this emerging field.
-#### Melody Guidance for Audio Diffusion Models Without Retraining
- - **Authors:** Cristobal Andrade, Sebastian J. Schlecht, Ben Maman, Meinard Müller
+ Speech-based Alzheimer's Disease (AD) detection holds significant promise due to its scalable and non-invasive nature. However, current Speech Large Language Models (SpeechLLMs), similar to conventional AD detection systems, still treat AD detection primarily as a simple categorical classification task. This paradigm provides limited interpretability of predictions, while leaving the inherent expressiveness and reasoning capabilities of SpeechLLMs largely underutilized. In this work, we take the first step toward reframing AD detection as a deep reasoning task via Reinforcement Learning (RL). We propose ADReasoner, an RL-enhanced SpeechLLM designed to generate accurate diagnostic predictions with interpretable rationales grounded in fine-grained acoustic-linguistic cues. To achieve this, we first systematically construct ADCoT-7K, an AD speech reasoning dataset combining real data and our quality-filtered synthetic data, where each instance features Chain-of-Thought (CoT) annotations and detailed captions. Second, observing the weak perception of AD-related acoustic-linguistic cues in current SpeechLLMs, we leverage Supervised Fine-Tuning (SFT) to develop a cue-perception-enhanced foundation model, ADReasoner-Base, thereby improving AD speech understanding. Third, alongside two standard rule-based rewards, we introduce a reasoning reward and a reasoning-label consistency reward into Group Relative Policy Optimization (GRPO) for RL. Furthermore, a shrinkage mechanism is employed to suppress misleading reasoning signals, while a gating mechanism progressively introduces both rewards to stabilize policy training. Experiments on three AD datasets (Pitt, PROCESS-1, PROCESS-2) demonstrate that ADReasoner outperforms previous state-of-the-art models in both detection performance and explanation quality, advancing AD detection toward interpretable reasoning from speech.
+#### In-Context Adapter Generation for Compositional Generalization in Large Audio Language Models
+ - **Authors:** Yiwei Guo, Siqi Huang, Bohan Li, Jing Peng, Hankun Wang, Zhihan Li, Kai Yu
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Artificial Intelligence (cs.AI); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.34413
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.34413
+
+ - **Abstract**
+ Large audio language models (LALMs) have achieved strong performance on standard speech and audio understanding tasks, yet their ability to systematically generalize to novel task compositions remains underexplored. Taking a meta-learning view, we extend Text-to-LoRA (T2L) to LALMs, generating instruction-conditioned LoRA adapters with a Transformer hypernetwork rather than learning a single fixed adapter shared across instructions. To exploit fine-grained task information, we introduce in-context adapter generation (ICAG), a token-level hypernetwork architecture; we call the resulting method T2L-ICAG. We evaluate this approach on two representative LALMs using SIFT-50M for supervised fine-tuning and construct a controlled compositional evaluation suite covering five task classes. Across two LALM backbones, T2L-ICAG consistently improves over static LoRA and also the global embedding-based T2L baseline. Coverage and capacity analyses further show that these gains are larger on structurally out-of-domain tasks and cannot be explained by parameter count alone. These results suggest that generating task-specific adapters from instructions is a promising direction for improving compositional generalization of LALMs.
+#### TIMUSE: Text-Initialized Masked Semantic Token Modeling for Universal Speech Enhancement
+ - **Authors:** Yiwei Guo, Hao Qiu, Mohan Ye, Zhijie Deng, Zehua Chen, Kai Yu
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32211
+ - **Arxiv link:** https://arxiv.org/abs/2610.34814
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32211
+ - **Pdf link:** https://arxiv.org/pdf/2610.34814
 
  - **Abstract**
- Controlling melody in audio generation normally requires training a conditional generative model on audio paired with pitch curves or MIDI notes. We instead guide an existing unconditional diffusion model, originally trained without melody inputs, to follow a target melody without retraining or modifying it. During inference, a differentiable pitch detector steers the sampled audio toward the desired pitches, while the diffusion model keeps it close to the distribution of realistic audio learned during training. Our main contribution is a sampling method that balances these two directions, providing melody control while preserving audio quality. To improve stability, we initialize sampling with a simple synthesized version of the target melody rather than pure noise. Experiments on piano, guitar, and singing voice show melody accuracy comparable to conditional models trained specifically for melody control. Our method therefore adds melody control to existing audio diffusion models without requiring paired melody data or task-specific retraining.
-#### CoupleFlow: Null-Calibrated Auditory Attention Decoding With Time-Locked Brain-Speech Coupling and Flow-Matching Likelihood Ratios
- - **Authors:** Ali Alavi, Donald S. Williamson
+ Discrete-token-based universal speech enhancement (USE) enables strong sequence modeling but often suffers from a quality--fidelity trade-off, where perceptually plausible outputs may alter linguistic content or speaker characteristics. We present TIMUSE, a two-stage USE framework combining text-initialized masked semantic restoration with acoustic reconstruction. A pretrained diffusion language model (DLM) is adapted with LoRA to recover clean semantic tokens using masked generative modeling, while a conditional flow matching model reconstructs clean 24\,kHz speech from the recovered semantic tokens and original degraded speech. Both system-level and controlled comparisons show that TIMUSE achieves a better balance between perceptual quality and fidelity than existing discrete USE models. Ablations further show that text DLM initialization brings a targeted gain under severe degradations.
+#### Realizing Low-Precision Storage and Sparse Execution in a Folded FPGA Speech Enhancer
+ - **Authors:** Clément Laroche
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Hardware Architecture (cs.AR); Machine Learning (cs.LG)
+ - **Arxiv link:** https://arxiv.org/abs/2610.35144
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.35144
+
+ - **Abstract**
+ Hardware-aware training often optimizes FPGA resources, latency, or bit operations, but folding changes what compression saves: shared arithmetic decouples precision, weight storage, and scheduled work. We derive training objectives from the measured costs of a folded streaming speech-enhancement accelerator. Mixed-precision weights reduce on-chip storage; structured channel sparsity removes entire operations from the engine schedule. We deploy a bit-exact implementation on the Kria KV260. The best sparse model eliminates 47.3% of convolution MACs, cutting frame time by 45% (1.86 to 1.03 ms) and dynamic energy by 60% (83 to 33 $\mu$J/frame) against a storage-priced model measured in the same session, with higher speech quality. Relative to the most efficient dense build measured separately, frame time falls by 42% and energy by 48%. Reducing weight width from 8 to 6 bits lowers dynamic power by 27% but changes frame time by less than 5%. Plain channel group-lasso removes more work than cycle-cost-weighted lasso. Thus, folded-accelerator training should price storage and removable work separately, rather than rely on a single bit-operation metric.
+#### Integrate the Reward, Don't Sample It: Window Likelihood for Interruptions and Backchannels in Full-Duplex Speech Models
+ - **Authors:** Guoqiang Hu, Lichao Zhang, Yizhou Peng, Yuhao Luo, Haifeng Hu, Sallen Sun, Will Yang, Eng Siong Chng
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Computation and Language (cs.CL); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2610.35581
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.35581
+
+ - **Abstract**
+ A full-duplex spoken dialogue model must yield when the user cuts in and hold when the user merely backchannels. Sequence-level RL with a timing reward (GRPO) is the usual recipe; we test its whole-rollout form on four open models and find two failures. A binary window reward gives zero advantage on exactly the windows that most need learning (a zero-gradient trap), and the one score per rollout is spread over listening-state decisions the reward is not written in terms of (credit leakage), so the model talks into silence or stops answering. Both come from sampling a reward that is a known function of a few binary control decisions. We propose \emph{window likelihood} (\WL): sample a continuation per window, but integrate in closed form over the stop decisions it visits and maximise the log-probability of acting correctly---a noisy-OR for yielding, a survival product for holding. On HumDial-FDBench, \WL\ gives the best yield/hold F1 on all six structurally different open models we post-train, exceeds Kyutai's released GRPO checkpoints (trained on different data), and adds no re-opening of the floor on any model.
+#### A Robust, Explainable, and Efficient Deep Metric for Speech and General Audio Quality
+ - **Authors:** Konstantin Schmidt, Pablo M. Delgado, Andreas Brendel
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32950
+ - **Arxiv link:** https://arxiv.org/abs/2610.35810
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32950
+ - **Pdf link:** https://arxiv.org/pdf/2610.35810
 
  - **Abstract**
- Auditory attention decoding (AAD) seeks to identify the attended talker from brief noninvasive brain recordings by comparing neural responses with competing speech streams. Recent electroencephalography (EEG) decoders report nearly perfect accuracy from one second of data, yet we show that this performance fails to generalize to unseen speech because models exploit trial leakage, eye gaze, and acoustic cues instead of speech evoked neural activity. We introduce CoupleFlow, which decodes attention through temporal coupling between neural and acoustic embeddings. Its predictions remain at chance when the brain signal contains no informative coupling, preventing shortcuts based on speech content or talker identity. A conditional flow matching head implements a likelihood ratio decision rule based on pointwise mutual information between brain and speech. This rule is Bayes optimal when the recording depends only on the attended talker and removes preferences for speech that is likely a priori. We evaluate CoupleFlow with content disjoint splits recovered from the audio and null tests that distinguish genuine temporal coupling from trial recognition. Across nine EEG and magnetoencephalography (MEG) datasets processed through a common pipeline, spanning four languages, high density EEG recordings, listeners with hearing impairment, and a room with multiple talkers, CoupleFlow outperforms linear and deep baselines while all null tests remain at chance. Finally, we derive an evidence accumulation law that predicts accuracy across window lengths from a single parameter per dataset and predicts that parameter from the strength of neural speech tracking. This law identifies recording signal to noise ratio as a limit on decoding speed and reliability and estimates the window length required to reach a target accuracy.
-#### When Do Self-Supervised Representations Help Speech Restoration?
- - **Authors:** Yongjoon Lee, Younghoo Kwon, Jung-Woo Choi
+ We present a robust Speech and Audio Quality Metric (SAQM) that merges features of traditional quality metrics with a CNN trained on a large amount of data using contrastive learning methods. To overcome the problem of limited amounts of human-labeled training data, we propose two pretraining strategies relying on pseudo-labels. One uses an established objective metric PEAQ-2f (based on ITU-R BS.1387) as surrogate loss, the other is based on contrasting a wide range of coding modes by a rule-of-thumb ordering based on expected perceived quality. As a key novelty, our approach lets us generate saliency maps by propagating gradients to identify which feature has the greatest impact on the final metric outcome and enables our system to provide insights regarding the type and extent of distortions present in the tested audio signal. The resulting (SAQM) operates at low computational complexity, performs comparably to (SOTA) metrics on speech while still performing well on general audio content.
+#### A Benchmark for Controllable Speaking-Style Captioning in Audio-Language Models
+ - **Authors:** Shreeram Suresh Chandra, Ashwyn Sharma, Liang Lu, Xiutian Zhao, Leda Sari, Björn Schuller, Berrak Sisman
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.33036
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.33036
+
+ - **Abstract**
+ Speaking-style captioning (SSC) aims to generate natural language descriptions of how speech is delivered, capturing paralinguistic attributes such as vocal timbre, prosody, and expressivity. Many downstream applications, including conversational AI agents, controllable speech generation, and large-scale audio annotation, require dimension-specific style captions that describe targeted aspects of speech (e.g., speaker traits, emotion, or delivery style), rather than a single undifferentiated description. However, existing work lacks a unified formulation for controllable speaking-style captioning. We address this gap by formulating SSC as an instruction-following audio-language task, where explicit instructions specify the speaking-style dimensions to be described. We introduce StyleInstructCaps, the first standardized benchmark for controllable speaking-style captioning in audio-language models. StyleInstructCaps provides a dataset and evaluation framework that measures metadata groundedness, hallucination, instruction-following ability, generalization to unseen instructions and audio datasets, and speaker-style consistency. Across nine state-of-the-art audio-language models, we find that strong instruction-following ability does not necessarily imply grounded speaking-style understanding, and that SSC-specific instruction-diverse training substantially improves groundedness, controllability, and speaker consistency.
+#### Measuring Local Acoustic Contribution in Speech LLMs via Word-Span Counterfactual Interventions
+ - **Authors:** Hardik B. Sailor, Qiongqiong Wang, Dheemant Rastogi, Nancy F. Chen, Ai Ti Aw
  - **Subjects:** Subjects:
 Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.30869
+ - **Arxiv link:** https://arxiv.org/abs/2610.33077
 
- - **Pdf link:** https://arxiv.org/pdf/2610.30869
+ - **Pdf link:** https://arxiv.org/pdf/2610.33077
 
  - **Abstract**
- Self-supervised learning (SSL) representations are widely used in speech restoration (SR), and the prevailing trend is SSL feature cleansing: fine-tuning the SSL to recover clean features from degraded speech, then conditioning the restoration model on them. However, the representational capability of SSL when encoding degraded speech has been underexplored, and we ask whether cleansing always benefits SR training. Across SSL encoders and perceptual quality proxies, we discover perceptual correlation collapse---under severe degradation, cleansing degraded SSL features toward clean ones misaligns with the SR objective. We hypothesize the restoration backbone can supply the SSL with clues to resolve this collapse, since its intermediate layers already produce partially restored features. We therefore propose Early Restoration Injection (ERI), which routes intermediate features from the restoration backbone into the SSL through a lightweight conditioning network. ERI excels over the unconditioned baseline and, on the VoiceFixer benchmark, achieves competitive performance among multiple baselines.
-#### X-Dubbing: Speech-to-Speech Translation under Temporal and Visual Constraints
- - **Authors:** Jeongsoo Choi, Ji-Hoon Kim, Junseok Ahn, Joon Son Chung
+ Correct transcription does not establish that a word depended on its local audio. We introduce the Acoustic Evidence Contribution (AEC), a word-level counterfactual measure of acoustic grounding. It is obtained from the change in reference-token log likelihood when the word's aligned acoustic span is replaced. We combine decoding outcomes on unedited audio with thresholded AEC in an outcome-contribution matrix, where correct targets are categorized according to their local acoustic contribution as high or low. Depending on the system, 33-49% of correct single-word targets fall below the twofold contribution threshold when averaged across corpora, despite no evident rank association with WER. Retention of reference words after span removal decreases monotonically across AEC quintiles, from 76-83% in the lowest quintile to approximately 1% in the highest. AEC therefore separates transcription correctness from dependence on the aligned local acoustic span while remaining an oracle-aligned diagnostic method.
+#### Beyond Visible Speakers: Context-Aware Active Speaker Detection with Speaker Registration
+ - **Authors:** Pu Wang, Hugo Van hamme
  - **Subjects:** Subjects:
-Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32042
+Sound (cs.SD); Computer Vision and Pattern Recognition (cs.CV); Multimedia (cs.MM); Audio and Speech Processing (eess.AS); Image and Video Processing (eess.IV)
+ - **Arxiv link:** https://arxiv.org/abs/2610.33127
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32042
+ - **Pdf link:** https://arxiv.org/pdf/2610.33127
 
  - **Abstract**
- Cross-lingual dubbing aims to convert source speech into target-language speech that remains synchronized with the original video. The key to this task is to produce a faithful translation that is naturally speakable within the source timing, which is non-trivial because languages differ in duration, rhythm, and articulation. In this paper, we propose X-Dubbing, which formulates the task as a joint problem of time-aware speech-to-text translation and video-aware text-to-speech. Specifically, our method consists of a Dubbing Translator that generates temporally structured scripts and a Voice Actor that renders them in synchrony with the source video, both grounded in a language-agnostic timing budget. We further refine the translator with dubbing-aware feedback from the synthesized speech, encouraging scripts that yield well-synchronized dubbing. This design requires no paired dubbing data, as the two components are trained on speech-text and monolingual audio-visual data respectively. Extensive experiments show that X-Dubbing outperforms recent baselines across diverse metrics, including isochrony and audio-visual correspondence.
-#### DIAL-S2ST: Learning Latency Control for Simultaneous Speech-to-Speech Translation
- - **Authors:** Jeongsoo Choi, Junseok Ahn, Joon Son Chung
+ Active speaker detection (ASD) relies on audiovisual correspondence between speech and visible faces, yet this correspondence becomes unreliable in crowded scenes, or when visual evidence is unavailable. We introduce ROAM-ASD-C and ROAM-ASD-CR to extend ROAM-ASD with contextual and identity-aware reasoning. ROAM-ASD-C jointly reasons across simultaneously visible candidates, allowing other faces to provide complementary evidence when the target observation is ambiguous or incomplete. ROAM-ASD-CR incorporates registered-speaker representations derived from enrollment speech, allowing detection of whether a speaker is active even when that speaker is not visually observed. ROAM-ASD-C achieves state-of-the-art performance across five ASD benchmarks: 96.8% mAP on AVA, 98.9% on WASD, 88.8% on UniTalk, 98.7% on Talkies, and 99.5% on ASW. It also improves ROAM-ASD by up to 13.3 mAP under 75% target-track visual removal.
+#### RoleHear: Pseudo-Labeling for Semi-Supervised Role-Attributed Streaming Speech Recognition
+ - **Authors:** Zefang Liu, Chenyang Zhu, Sangwoo Cho, Xujun Peng, Rongqing Huang, Shi-Xiong Zhang, Sambit Sahu
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.33765
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.33765
+
+ - **Abstract**
+ Streaming automatic speech recognition transcribes at low latency but produces an unattributed word stream, while real-time applications such as customer-service analytics need each word tied to a speaker role. Role attribution is usually a separate stage, either an offline or streaming speaker-diarization model aligned to the words or a text-based large language model applied to the transcript, and role labels for training are scarce. We present RoleHear, a semi-supervised pipeline that makes a single cache-aware streaming transducer emit roles inline through lightweight in-vocabulary role tokens: a fast turn-boundary marker followed by a per-role token a few words later. An offline transducer teacher, fine-tuned into a role-attributed recognizer, relabels unlabeled audio, and a multimodal large language model supplies silver role labels where gold annotations are unavailable. The streaming student is fine-tuned on the mixture in a single pass. Across customer-service calls with gold roles and earnings calls with silver roles, RoleHear attributes roles accurately while preserving transcription quality and narrowing the gap to the offline teacher.
+#### Heard Enough to Act: Early Tool Calling in Spoken Dialogue Systems
+ - **Authors:** Yizhou Peng, Chen Chen, Donghang Wu, Hexin Liu, Eng Siong Chng
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2610.34653
+
+ - **Pdf link:** https://arxiv.org/pdf/2610.34653
+
+ - **Abstract**
+ Latency-sensitive spoken agents must know not only which tool to call, but also when they have heard enough to act. Waiting for the turn to complete delays execution even when the request is already actionable. However, neither existing spoken agents nor spoken dialogue corpora define the earliest point at which a request becomes actionable. We introduce a synthetic spoken-dialogue pipeline that provides earliest-actionable-point supervision, marking when the observed speech grounds a tool and its required arguments. Through controlled task generation, speech synthesis and alignment, and gated annotation, we construct 26,694 dialogues totaling 786 hours across 48 domains, with disjoint training and test argument values. We additionally create an audio rendering of $\tau^2$-bench for external evaluation. We train an omni-modal language model on this corpus, enabling causal, chunk-level decisions and partial-transcript generation for downstream call completion. The model achieves tool-state macro-F1 scores of 0.48 and 0.47 on held-out dialogues and the external benchmark, respectively. For correct calls, the estimated mean lead over a turn-end cascade, using the same formatter, is 1.8-2.0 seconds in-domain and 1.1 seconds on $\tau^2$-bench. These results demonstrate a data-driven path toward spoken agents that act while listening. We will open-source the pipeline and the training scripts.
+#### When the Persona Contradicts the Line: Diagnosing Plan-to-Synthesis Failures in Chain-of-Thought TTS
+ - **Authors:** Joonyong Park, Jerry Li
  - **Subjects:** Subjects:
 Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32214
+ - **Arxiv link:** https://arxiv.org/abs/2610.35008
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32214
+ - **Pdf link:** https://arxiv.org/pdf/2610.35008
 
  - **Abstract**
- We propose DIAL-S2ST, a post-training method for learning inference-time latency control in simultaneous speech-to-speech translation models. Our approach reuses pretrained translation capabilities through self-distillation from lookahead predictions, while limiting the influence of large text distillation losses to account for the imitation gap. This provides supervision for earlier emission without paired target data or reward computation. To make the learned timing adjustable at inference, we jointly train a single LoRA adapter across scales with matched lookahead guidance. Experiments on French-to-English translation with Hibiki demonstrate that only 10 hours of source speech enable this adaptation, providing flexible latency control with a favorable quality-latency trade-off.
-#### Noisy Target Training Meets Drifting for Weakly-Supervised Speech Enhancement
- - **Authors:** Yoshiki Masuyama, Dominik Klement, Christoph Boeddeker, Julius Richter, Kohei Saijo, Gordon Wichern, Takahiro Edo, Jonathan Le Roux
+ Chain-of-thought TTS systems rely on language-model planners to translate persona and context into vocal delivery, but it is unclear where this intent is lost when the requested affect conflicts with lexical sentiment. We introduce a bilingual Japanese--English persona--line conflict benchmark in which each item pairs one line with congruent and conflicting personas and pre-declares the expected acoustic direction. We probe this direction in the planner-generated delivery phrase, the planner-written emotion vector, the QwenEmotion-generated vector, and the rendered waveform. Planner outputs are usually direction-correct, while downstream agreement can be substantially lower. Bypassing QwenEmotion provides only modest gains over the full planner-controlled Base. Supervising QwenEmotion raises the direction rate to 75% in Japanese and 84% in English. A learned text-to-latent interface reaches the highest English rate of 89% and the highest Japanese arousal rate of 88%. These results show that learned repair of the plan-to-synthesis interface can recover counter-textual delivery, although its effect differs across languages and acoustic axes.
+#### Graph Neural Network for Wide-Area 6DoF Ambisonic Rendering
+ - **Authors:** Gioele Greco, Filippo Marri, Mirco Pezzoli, Fabio Antonacci
  - **Subjects:** Subjects:
-Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.32870
+Sound (cs.SD); Audio and Speech Processing (eess.AS); Signal Processing (eess.SP)
+ - **Arxiv link:** https://arxiv.org/abs/2610.35741
 
- - **Pdf link:** https://arxiv.org/pdf/2610.32870
+ - **Pdf link:** https://arxiv.org/pdf/2610.35741
 
  - **Abstract**
- In speech enhancement, standard supervised training requires pairs of noisy and clean speech. Such pairs are typically created by artificially degrading clean speech, leading to a domain mismatch between synthetic training data and real recordings. Noisy target training (NyTT) mitigates this limitation by training an enhancement model to predict a noisy recording from a noisier version generated by adding extra noise. However, since the training target is noisy, NyTT might learn to leave residual noise in the enhanced output. In this paper, we address this issue in NyTT by incorporating a Sinkhorn drifting loss that matches the distribution of the enhanced speech to that of unpaired clean speech. The Sinkhorn drifting loss attracts enhanced speech toward high-density regions of the clean-speech distribution while repelling it from the current enhanced-speech distribution in latent space. This loss uses only unpaired clean speech rather than the clean counterpart of each degraded recording, preserving the weakly-supervised nature of NyTT. Experimental results on VoiceBank-DEMAND and CHiME-3 real recordings demonstrate the efficacy of the proposed combination.
+ Wide-area 6DoF rendering from sparse Ambisonic recordings is commonly addressed by interpolating parametric spatial descriptors rather than the waveforms themselves. This preserves the fidelity of a nearby measured signal and avoids phase artifacts caused by mixing distant arrays. However, existing DirAC-based approaches rely on geometric interpolation weights that do not depend on the acoustic scene observed by the microphones. We propose a lightweight Graph Neural Network (GNN) that refines only this interpolation stage. The known Ambisonic arrays and the query position are represented as a graph whose nodes contain local DirAC features and whose edges encode relative distance and directional relations. The network predicts positive query-conditioned weights over the measured arrays, while the target energy, diffuseness, and direction of arrival are reconstructed by an analytical DirAC layer. Experiments on unseen rooms, unseen speech signals, and unseen array configurations show that the proposed weighting improves energy reconstruction and radiation-pattern similarity with respect to baseline interpolation.
 
 
 by Zyzzyva0381 (Windy). 
 
 
-2026-10-26
+2026-10-27
