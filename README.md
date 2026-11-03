@@ -1,4 +1,4 @@
-# Showing new listings for Monday, 2 November 2026
+# Showing new listings for Tuesday, 3 November 2026
 Auto update papers at about 2:30am UTC (10:30am Beijing time) every weekday.
 
 
@@ -13,80 +13,190 @@ Keyword list: ['text-to-speech', 'text to speech', 'tts', 'LLM-based', 'speech',
 Excluded: []
 
 
-### Today: 7papers 
-#### VoxLock: Target-Speaker Extraction for Voice Agents Without an Enrollment Step
- - **Authors:** Arbaz Siddiqui
+### Today: 18papers 
+#### Learning Timeline-Preserving Speech-to-Speech Translation
+ - **Authors:** Zhisheng Zheng, David Harwath
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS); Computation and Language (cs.CL); Sound (cs.SD)
+ - **Arxiv link:** https://arxiv.org/abs/2611.00690
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.00690
+
+ - **Abstract**
+ Speech-to-speech translation (S2ST) increasingly preserves what is said and how it sounds, but not necessarily when speech and silence occur. For dubbing and other temporally grounded applications, matching total duration is not enough: speech and pauses must also occur at corresponding moments. We formulate timeline-preserving S2ST, which aims to preserve the source endpoint and salient internal pauses on a shared absolute timeline. We present TransDubber, an end-to-end autoregressive system that learns this temporal structure directly from aligned target waveforms, without inference-time frame-level timing control or post-hoc temporal correction. To provide this supervision, we construct 642K exactly duration-matched English-Chinese speech pairs by translating and synthesizing target speech on source-defined temporal scaffolds. Training combines a progressive supervised curriculum with verifier-guided reinforcement learning to balance translation quality and temporal alignment. On a 4,353-utterance test set spanning read and spontaneous speech, TransDubber increases the proportion of translations within 2% of the source duration from 25.6% to 61.5% and pause-alignment F1 from 0.118 to 0.550 compared with UniSS, while maintaining competitive translation quality. Our analysis shows that aligned supervision establishes timeline following, while reinforcement learning refines temporal precision and partially offsets the translation-quality cost of strict synchronization. Together, these results demonstrate the effectiveness of our data and training framework for timeline-preserving S2ST. Audio samples, code, datasets, and pretrained models are available at this https URL.
+#### Multilingual TASU: Extending Text-Only Alignment to Multilingual Speech Recognition via Simulated CTC Posteriors
+ - **Authors:** Chenghao Wang, Yi Yang, Jing Peng, Yu Xi, Shuai Wang, Kai Yu
  - **Subjects:** Subjects:
 Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.40727
+ - **Arxiv link:** https://arxiv.org/abs/2611.00692
 
- - **Pdf link:** https://arxiv.org/pdf/2610.40727
+ - **Pdf link:** https://arxiv.org/pdf/2611.00692
 
  - **Abstract**
- A voice agent's speech recognizer transcribes everyone near the microphone, including people other than the caller. I fine-tuned a public causal target-speaker extraction model (REAL-TSE, 27M parameters) on one GPU to work from a voice sample cut from the call itself, and released it as VoxLock. I score it by what a recognizer writes on real recordings. On Krisp's 265-recording benchmark it reaches 4.95% WER against 23.21% unprocessed and lets 9 background words into the transcript over 85 minutes of background-only speech. Its WER is not significantly different from Krisp's best filters and is significantly lower than the other commercial and open systems I tested. On 400 AMI meeting windows built and frozen before scoring, it cuts WER from 42.95% to 10.63%. The 8-bit model runs a live call on 77% of one CPU thread with 24 ms of algorithmic latency. Model, code and per-file scores are open.
-#### JYVA at BeTraC: Audio-Based Medical Note Generation with SOAP Section-Specific Queries
- - **Authors:** Youness Dkhissi (LIUM), Valentin Vielzeuf, Antoine Caubrière, Jean-Emile Dartois (IRT b-com)
+ Speech Large Language Models (Speech LLMs) achieve strong multilingual ASR when large-scale paired speech-text data is available, yet such resources remain scarce and highly imbalanced across languages. Text-Only Alignment for Speech Understanding (TASU) alleviates this bottleneck by training cross-modal alignment from simulated CTC posteriors without paired audio, but prior work has been limited to English, leaving open whether text-driven alignment can scale to the multilingual setting where data sparsity and cross-lingual phonetic interference amplify the difficulty of learning a shared alignment interface. In this work, we investigate TASU-style posterior alignment as a means of mitigating paired-data scarcity in multilingual ASR. We adopt the native 50,002-way posterior space of a frozen OWSM-CTC frontend as a shared multilingual interface to Qwen2.5-1.5B-Instruct, and systematically compare three supervision sources on eight Multilingual LibriSpeech languages: real audio-derived posteriors, heuristic CTC Posterior Simulation (CPS), and posteriors generated by a learned multilingual simulator. With real posteriors, LoRA adaptation reduces pooled WER from 10.08% (standalone OWSM-CTC) to 8.21%, improving all eight languages. For text-only alignment, the learned simulator substantially outperforms heuristic CPS and attains 10.51% WER with LoRA. Notably, a CPS-initialized model reaches 9.19% WER after only one real-posterior adaptation epoch using merely one-ninth of the complete MLS paired-speech training set, demonstrating that text-first initialization can drastically reduce the amount of paired audio required for competitive multilingual ASR. These findings establish TASU as a viable multilingual alignment framework and highlight text-only simulation as an effective remedy for paired-data scarcity and imbalance across languages.
+#### Continual Residual Memory for Gradient-Free Test-Time Adaptation in Speech Enhancement
+ - **Authors:** Yijia Shan, Tianrui Wang, Zixiang Wang, Sheng Wang, Yao Li, Yu Wang, Xie Chen
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.01023
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.01023
+
+ - **Abstract**
+ Offline-trained speech enhancement models can degrade under deployment mismatch. Test-time adaptation (TTA) addresses this problem using unlabeled test observations, but existing approaches mainly rely on online parameter optimization and do not explicitly exploit the residual discarded by the enhancement backbone. We propose Continual Residual Memory (CRM), a gradient-free continual TTA framework for selective residual recovery. CRM first estimates bounded time-frequency residual recovery from the current utterance alone and then uses causal prototype memory from preceding utterances to refine this estimate. During deployment, adaptation is driven solely by the evolving memory state while the backbone and CRM modules remain frozen. Across DNS, EARS-D, and Libri-MUSAN, CRM improves all seven reported metrics over frozen CMGAN and achieves the best PESQ, CSIG, and COVL on all three test sets among the compared methods. CRM remains lightweight and shows cross-backbone applicability on five additional backbones. Code is available at this https URL.
+#### Zero-Shot Voice Cloning for Synthetic Data Augmentation in Children's ASR
+ - **Authors:** Mohammad Mohsen Goodarzi, Stefan Wabnik, Matthias Stennes, Stephanus Volke, Alexander Schwarz
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.03050
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.03050
+
+ - **Abstract**
+ Children's automatic speech recognition (ASR) lags behind adult ASR due to theacoustic mismatch between adult-trained acoustic models and children's speech, as well as the scarcity of labelled children's speech corpora. We investigate whether zero-shot text-to-speech (TTS) synthesis with voice cloning, requiring only a short reference clip per speaker, can serve as a practical substitute for real children's speech when fine-tuning large pre-trained ASR models. Using the OmniVoice multilingual TTS system we synthesise up to 16,000 child-like utterances from two English corpora (ENNI, clinical narrative samples, ages 7-12, and MyST, conversational science-tutor speech, grades 3-5) and fine-tune Whisper-small under different experimental conditions covering real data, synthetic data, cross-corpus data, and all-data combination. A systematic sensitivity analysis over speaker count, text-pool size, and utterances per speaker reveals that synthetic data alone reduces word error rate (WER) from a 19.8 % zero-shot baseline to 16.4 % on ENNI, recovering approximately 30 % of the gap to real-data fine-tuning (8.8 %). Combining synthetic with real data is essentially indistinguishable from real-data-only fine-tuning (9.2 % vs. 8.8 %). Speaker count plateaus at ~40 speakers for cross-domain transfer, while multi-speaker acoustic diversity per transcript, rather than raw text coverage, emerges as the primary determinant of cross-domain generalisation; out-of-vocabulary (OOV) rate proves to be a poor proxy for WER given Whisper's pre-trained language modelling capacity.
+#### SPATEX: Array-Flexible Multichannel-to-Multichannel Target Speech Extraction using Direction Clue
+ - **Authors:** Wen Wen, Changda Chen, Yu Xi, Haoyu Li, Qiang Zhou, Guanyu Chen, Xiaoyu Gu, Bohan Li, Shuai Wang, Kai Yu
+ - **Subjects:** Subjects:
+Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.03119
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.03119
+
+ - **Abstract**
+ Multichannel-to-multichannel target speech extraction (MIMO TSE) aims to recover the target speech signal at each microphone while preserving interchannel spatial information. However, existing MIMO TSE systems generally assume a fixed microphone configuration, limiting their applicability to recording devices with varying microphone configurations. In this work, we propose SPATEX, the first array-flexible MIMO TSE framework that reconstructs microphone-wise target speech signals across microphone counts and array geometries. Given microphone coordinates and a target direction-of-arrival (DOA), SPATEX combines geometry-aware channel exchange and shared temporal attention to jointly reconstruct microphone-wise target signals while maintaining permutation equivariance. Experiments show that SPATEX outperforms array-flexible single-output baselines under most test conditions and consistently improves extraction quality and spatial fidelity over fixed-array MIMO baselines. Ablation studies further validate the benefits of temporal coordination and spatial supervision, while additional evaluations demonstrate robustness to target DOA errors. Our code and dataset are available at this https URL.
+#### One Waveform, Two Stories: Benchmarking Speech-Acoustic Conflict in Audio-Language Models
+ - **Authors:** Wenbin Wang, Yuheng Li, Koichiro Yoshino
+ - **Subjects:** Subjects:
+Sound (cs.SD); Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.00325
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.00325
+
+ - **Abstract**
+ Audio-language models (ALMs) are evaluated on their understanding of both speech and environmental sounds. What remains underexplored is how they respond when spoken claims contradict acoustic evidence within the same recording. We introduce SAC-Bench, a benchmark of intra-audio speech--acoustic conflict comprising 616,031 unique clips from 188 sound-event classes across seven semantic, temporal, and spatial tasks. It pairs environmental recordings with compatible or contradictory synthesized spoken claims and includes audio-only controls where applicable. Across five open-weight ALMs evaluated on semantic and temporal tasks, high audio-only accuracy often coexists with large losses under conflicting claims; Event Identity accuracy is 24.8--46.5 percentage points lower in conflict than compatible conditions. Temporal Order failures persist even when speech follows the complete event sequence, so simultaneous speech--event masking cannot fully explain them. A spatial case study with Spatial-Omni finds lower motion accuracy associated with both spoken claims and the speech source's physical trajectory. Prompt interventions sometimes restore acoustic accuracy, but can also reduce claim-aligned answers without improving grounding or worsen performance. SAC-Bench thus separates acoustic competence, conflict robustness, and intervention effects.
+#### C3: Speech-Guided KV Retrieval for Long-Context SpeechLLM Inference
+ - **Authors:** Dancheng Liu, Markus Müller, Rupak Vignesh Swaminathan, Jing Liu, Srikanth Ronanki, Aram Galstyan
+ - **Subjects:** Subjects:
+Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.00333
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.00333
+
+ - **Abstract**
+ Speech language models encode audio at a much higher rate than text, causing the KV cache to dominate the memory, bandwidth, and decoding cost of long-form generation. KV retrieval can reduce per-step access by attending to only a query-dependent subset of the cache, but existing methods are designed primarily for text and do not account for the structure of audio attention. We first show that retrieval errors may compound autoregressively into generation drift. We then analyze full audio attention during long-form generation and identify three properties relevant to retrieval: unequal attention concentration across query heads, non-contiguous audio support, and temporal continuity across decoding steps. Guided by these observations, we propose $C^3$(Cluster-Compete-Compete), which organizes audio KVs in a hierarchical key-space index, lets query heads sharing a KV head compete for a common retrieval budget, and adaptively reallocates retrieval resolution through paired split-merge updates. Across long-form speech recognition, translation, and summarization on four SpeechLLMs, $C^3$ achieves the strongest overall performance among retrieval methods under comparable final-KV access budgets, with particularly large gains in the tight-budget regime, while improving long-context decoding efficiency and accelerator-memory scaling.
+#### SPHERE: A Multi-Attribute No-Reference metric for Binaural Speech Quality And Spatial Fidelity
+ - **Authors:** Bala Manikya Prasad Puram, Chandan K A Reddy, Artem Dementyev
  - **Subjects:** Subjects:
 Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.40695
+ - **Arxiv link:** https://arxiv.org/abs/2611.00402
 
- - **Pdf link:** https://arxiv.org/pdf/2610.40695
-
- - **Abstract**
- We present our submission to the Beyond Transcription Challenge (BeTraC) on medical note generation from doctor-patient audio conversations. We propose a section-aware approach based on Qwen2.5-Omni-3B, in which a lightweight Q-Former learns SOAP section-specific queries to extract compact clinical representations from speech. In the lightweight track, our system ranks fourth and substantially outperforms the challenge baseline, achieving a Concept F1 of 0.5005 on the official test set. The organizers' analysis and our heuristic evaluation suggest improved robustness to hallucinations, and better stability under difficult audio conditions. These results show that explicitly modeling SOAP structure through section-specific queries is an effective way to improve the faithfulness and reliability of audio-based medical note generation.
-#### Apriel Voice 27B Preview: An Open Model for Speech, Reasoning, and Tool Use
- - **Authors:** Aman Tiwari, Akshay Kalkunte, Akintunde Oladipo, Jash Shah, Tara Bogavelli, Hoang Nguyen, Nishanth Madhusudhan, Vishal Juneja, Sridhar Nemala, Srinivas Sunkara, Sathwik Tejaswi Madhusudhan, Shruthan Radhakrishna, Masoud Hashemi, Kelechi Ogueji, Khalil Slimi, Saloni Mittal, Pulkit Pattnaik, Shashank Maiya, Dhruv Jhamb, Esakkivel Esakkiraja, Katrina Stankiewicz, Gabrielle Gauthier Melançon, Fanny Riols, Amit Saha, Lakshmi Sirisha Chodisetty, Nitin Aggarwal, Anil Madamala, Sagar Davasam, Segan Subramanian, Vikas Yadav, Sai Rajeswar Mudumba
- - **Subjects:** Subjects:
-Sound (cs.SD); Computation and Language (cs.CL); Machine Learning (cs.LG); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.40738
-
- - **Pdf link:** https://arxiv.org/pdf/2610.40738
+ - **Pdf link:** https://arxiv.org/pdf/2611.00402
 
  - **Abstract**
- A capable voice assistant must do more than recognize words; it must understand requests, reason over context, sustain conversations, and act through tools. We present Apriel Voice 27B Preview, an open speech-language model that unifies these capabilities within a shared reasoning backbone while retaining text and image input modalities. Built on the post-trained Gemma 4 26B-A4B checkpoint, Apriel Voice directly processes speech and generates both responses and tool calls without requiring a separate dialogue model. We introduce a two-stage training procedure to adapt the model to speech. The first stage establishes the speech interface, while the second jointly adapts the projector and backbone through supervised fine-tuning, text replay, and source-dependent cross-entropy and forward Kullback--Leibler divergence supervision. Automatically constructed speech-conditioned dialogues provide conversational training data, while local teacher serving, overlapping teacher and student computation, and fused full-vocabulary losses enable efficient online distillation. In thinking mode, Apriel Voice achieves a score of 98.90 on Big Bench Audio, 81.13 on Speech-BFCL, and a task success rate of 65.51% on $\tau$-Voice, with a mean latency of 1.91 seconds. It also achieves 51.27% English EVA accuracy and 74.13% experience pass@1. Finally, we deploy Apriel Voice 27B Preview on a custom serving platform to support interactive voice interactions.
-#### Incongruence-Aware Evaluation of Multimodal Speech Emotion Recognition in Audio Large Language Models
- - **Authors:** Fengji Jing, Guy Laban
- - **Subjects:** Subjects:
-Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Multimedia (cs.MM); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.40883
-
- - **Pdf link:** https://arxiv.org/pdf/2610.40883
-
- - **Abstract**
- Voice-interactive large language models process both what a speaker says and how they say it, yet the two channels do not always agree. We ask whether that disagreement degrades speech emotion recognition. Mapping text and audio into a shared valence-arousal-dominance space, we convert the distance between them into a continuous, threshold-free incongruence score with a two-component Gaussian mixture, and validate the score against human judgement. We evaluate three audiocapable models on acted, conversational and spontaneous speech (eNTERFACE'05, MELD and CMU-MOSEI). With the model held constant across modalities, incongruence raises the odds of error whenever audio is present, in every corpus, after controlling for the ground-truth emotion and for distance in the feature space. Supervised classifiers trained on the same features behave in the opposite way, which suggests that the difficulty lies in how these models combine raw evidence rather than in the signal itself. Text-only effects are unreliable: swapping only the model that reads the transcript reverses their sign on one corpus. Rebuilding the score without the emotion lexicon reproduces the central result, and among six simpler alternatives it is the only label-free score that predicts error in all three corpora. Code, data tables and prompts are released.
-#### From Transcription to Reformulation: Defining and Benchmarking Grounded Generative Speech Recognition
- - **Authors:** Qing Wang, Qihan Hu, Hang Lv, Yan Yang, Boqing Liu, Xuechao Zhu, Zehan Li, Hongjie Chen, Jian Kang, Jie Li, Yongxiang Li, Lei Xie
- - **Subjects:** Subjects:
-Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.41292
-
- - **Pdf link:** https://arxiv.org/pdf/2610.41292
-
- - **Abstract**
- Speech language models have expanded automatic speech recognition (ASR) from transcription to general speech-to-text generation. Yet existing benchmarks still assume a single ground-truth transcript per utterance, an assumption that struggles when models produce readable, formatted, or structured outputs. In this work, we introduce Grounded Generative Speech Recognition (GSR), reformulating speech recognition as generating semantically grounded text instead of a single transcript. We define a grounded reformulation space that characterizes all valid textual realizations supported by the input speech, and establish a four-level hierarchy of reformulation capabilities, including literal transcription, canonical reformulation, semantic reformulation and speech-grounded structuring. Based on this formulation, we present GSR-Bench, the first comprehensive benchmark designed to evaluate generative speech recognition systems beyond exact transcript matching. GSR-Bench covers diverse scenarios including refined meeting transcription, cross-dialect translation, context-aware speech understanding, and robustness under silent or noisy acoustic conditions. To address the limitations of word-level evaluation metrics, we develop a multi-dimensional evaluation framework combining speech grounding assessment and LLM-based semantic judgment, whose reliability is validated through human preference studies. Extensive experiments across representative architectures, ranging from conventional ASR systems to end-to-end Speech-LLMs, reveal fundamental trade-offs between transcription fidelity and generative reformulation ability. Our analysis further identifies critical failure modes, including acoustic hallucination, unsupported generation, and instruction drift, providing insights into the design and evaluation of future grounded generative speech systems.
-#### From prediction error to sparse events: Biologically inspired signed-dyadic coding for Mandarin keyword spotting
- - **Authors:** Zijian Zhou, Rui Liu, Rongxiang Nie, Rui Ma, Ziyao Zhang, Xin Du
+ In this paper, we introduce SPHERE (Spatial and Perceptual Human Evaluation and Rating Estimator), a multidimensional no-reference perceptual evaluation framework for binaural speech. SPHERE defines nine distinct perceptual and spatial attributes that characterize the immersive listening experience. We detail the crowdsourcing protocol and evaluation template used to collect ground-truth human ratings. To demonstrate the tractability of automating this framework, we evaluate six baseline configurations across single-branch and Siamese architectures utilizing Mel-spectrograms, complex STFTs, and pretrained spatial embeddings (PhaseCoder). Experimental results demonstrate that these baseline estimators achieve strong correlation with human subjective ratings, proving the feasibility of automated multidimensional spatial audio quality assessment.
+#### Microphone Geometry Aware Regional Target Speaker Extraction
+ - **Authors:** Shitong Xu, Niki Trigoni, Andrew Markham
  - **Subjects:** Subjects:
 Sound (cs.SD); Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.41381
+ - **Arxiv link:** https://arxiv.org/abs/2611.00894
 
- - **Pdf link:** https://arxiv.org/pdf/2610.41381
+ - **Pdf link:** https://arxiv.org/pdf/2611.00894
 
  - **Abstract**
- In continuous spiking keyword spotting, temporally correlated acoustic frames can repeatedly trigger memory access and neural computation at a dense input interface, even when hidden activity is sparse. Predictive processing and sensory adaptation suggest retaining predictable input locally and responding selectively to deviations. Inspired by this mechanism, we propose Predictive Signed-Dyadic Coding (PG). PG maintains a local prediction for each input channel and transmits an event only when the residual exceeds a learned threshold. Each event carries a sign and a finite power-of-two magnitude, and the receiver reconstructs it with fixed-point shifts and additions. In Mandarin keyword spotting, INPUT-PG reaches 90.00% accuracy while reducing mean SRAM reads by 33.87% and inference cycles by 32.77%. PG provides a hardware interface for research on low-power continuous speech processing and event-based sensory systems.
-#### Scalable Audio-LLM System for Speech MOS Evaluation: A Diagnostic Case Study and Adaptation Roadmap
- - **Authors:** Dimitrios Kokkinis, Panagiotis Kakoulidis, Nikolaos Ellinas, Chrysovalanti Lymperi, Alexandra Vioni, Georgios Vardaxoglou, Iakovi Alexiou, Myrsini Christidou, Jeasung Lee, Gunu Jho, Inchul Hwang, Pirros Tsiakoulis, Aimilios Chalamandaris
+ Regional target speaker extraction (RSE) aims to extract speech originating from a specified angular region, relaxing the requirement for precise target speaker location when performing location based speech extraction. However, existing RSE methods typically assume a fixed microphone array configuration and microphone number, limiting their applicability to unseen microphone geometries and varying numbers of microphones. In this work, we propose a geometry-aware RSE framework capable of extract with varying microphone array geometry and microphone numbers. Specifically, we introduce an attention-based multichannel front-end to encode inter-microphone phase information, together with a spatial audio reconstruction-based auxiliary objective to improve the front-end spatial representations quality. Experimental results demonstrate that the proposed framework improves SI-SDRi by 5.1 dB over geometry-aware baselines across microphone arrays with four-microphones, while maintaining a performance gap of less than 0.6 dB compared with a tetrahedral geometry-specific baseline when evaluated on the tetrahedral microphone array.
+#### Pop Goes the Verifier: Phoneme-Targeted Data Poisoning of Voice Liveness Detection
+ - **Authors:** Eshaq Jamdar, Amith Kamath Belman
+ - **Subjects:** Subjects:
+Cryptography and Security (cs.CR); Computer Vision and Pattern Recognition (cs.CV); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.01095
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.01095
+
+ - **Abstract**
+ Many Automated Speaker Verification Systems (ASVs) commonly employ liveliness detection techniques, such as VoicePop, which identify genuine speech by analyzing low- frequency pop bursts from plosive phonemes using Gammatone Frequency Cepstral Coefficients (GFCC) and an SVM classifier. While effective against traditional replay attacks, such systems are vulnerable to data poisoning techniques. Prior work shows that broadly applied SyntheticPop attacks can collapse model to accuracy to as low as 14.01% using only 20% poisoned samples, but the resulting artifacts are easily detectable when visualizing the waveform energies. This paper introduces Pop Goes the Verifier, a stealthier phoneme injection poisoning attack. By leveraging FastSpeech 2 (FS2) with a modified HiFi-GAN vocoder, we inject localized pop bursts at plosive phoneme locations and overlay subtle Gaussian noise to reduce the visibility of injected artifacts in waveform and spectrogram analysis. Using the ASVSpoof 2019 as the dataset, we observe that the approach achieves a moderate poisoning attack while providing greater resistance to signal-level inspection than the original SyntheticPop attack.
+#### GSLM2: Multi-Stream Speech Representation Learning and Generative Spoken Language Modeling
+ - **Authors:** Yosuke Higuchi, Tom Fizycki, Mahi Luthra, Charles-Éric Saint-James, Azeez Syed, Angel Villar-Corrales, Mido Assran, Nicolas Ballas, Jiayi Shen, Dongyan Lin, Phillip Rust, Surya Parimi, Vanessa Stark, Alexandre Allauzen, Balázs Kegl, Juan Pino, Emmanuel Dupoux
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.01143
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.01143
+
+ - **Abstract**
+ Generative spoken language models (SLMs) offer a route to learning linguistic structure purely from speech, yet they lag far behind text-based models in both capability and data scaling efficiency. We identify two bottlenecks underlying this gap: the limited linguistic quality of existing speech units and the reliance on a single stream of discrete units to represent speech. Multiple codebooks are widely used to encode acoustic features but rarely to represent speech semantics. We present GSLM2, which learns and models complementary properties of speech at multiple levels of abstraction. Its encoder, SpidR 2.0, uses self-supervised learning with differentiable prediction heads to induce high-quality discrete units at multiple levels. A multi-stream SLM then jointly models these units using a shared temporal backbone, stream-specific predictors, and an autoregressive head that captures cross-stream dependencies. Across training data sizes and model scales, up to 6M hours and 6.5B parameters, GSLM2 consistently improves linguistic competence while scaling more efficiently with data. As a result, it substantially narrows the gap between spoken and text-based LMs; across read and conversational speech domains, we shrink the gap by about two orders of magnitude on sWuggy, sBLIMP, and tSC, while also outperforming competitive speech-text systems on all three tasks. We open-source the training code and model checkpoints at this https URL.
+#### Local or Escalate? Post-Training Expert Routing for Real-Time Duplex Speech Models
+ - **Authors:** Ruoyu He, Jisen Li, Anthony Ji, Changyi Yang, Zetian Li, Runduo Ma, Zhen Zhang, Zhongzhu Zhou
+ - **Subjects:** Subjects:
+Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.01639
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.01639
+
+ - **Abstract**
+ A full-duplex model should answer easy questions immediately, but hard questions often need stronger reasoning, which may require waiting. The challenge is to choose between these paths at the moment the model begins to speak. Recent systems learn related mode decisions through special-token generation inside the dialogue model, coupling routing to turn-taking and temporally annotated full-duplex training. We study a post-training alternative. We freeze MiniCPM-o 4.5, using only its speech input and output, and fit a logistic failure readout on hidden states already available at its native listen-to-speak transition. The resulting gate requires no additional model generation and exposes thresholds that can be retuned without changing the duplex policy. A probe fitted on text-input states also reads the states of spoken questions, including unseen human recordings. On the internal benchmark, selective handoff improves answer accuracy by 27.1 points. Compared with always using the expert, it reduces mean server time to first answer audio by 31.5 percent. It also outperforms matched random routing across external speech question-answering pools, as well as a zero-shot GPT-5.4 mini router that rates the transcribed question. The training recipe also transfers to a second duplex model family. These results show that an existing duplex model can be equipped to answer easy turns immediately and wait for stronger reasoning or fresher knowledge on the turns that need it, without further duplex training.
+#### GDBack: A Group-Delay Backdoor Attack on Speaker Identification via Analytic All-Pass Filtering
+ - **Authors:** Bicheng Xiong, Tao Li, Chenhui Cui, Zedong Xing, Qien Li, Weiping Wen, Rubing Huang, Tsong Yueh Chen
  - **Subjects:** Subjects:
 Sound (cs.SD); Audio and Speech Processing (eess.AS)
- - **Arxiv link:** https://arxiv.org/abs/2610.41539
+ - **Arxiv link:** https://arxiv.org/abs/2611.01721
 
- - **Pdf link:** https://arxiv.org/pdf/2610.41539
+ - **Pdf link:** https://arxiv.org/pdf/2611.01721
 
  - **Abstract**
- The continuous deployment of enterprise voice systems creates a critical operational bottleneck: evaluating the acoustic quality of synthetic speech across high-volume production updates. While human Mean Opinion Score (MOS) remains the quality gold standard, it introduces severe operational costs and turn-around delays that make continuous integration infeasible. In this work, we present a system design case study for a scalable, low-cost and offline evaluation pipeline capable of scoring large batches of synthetic speech at marginal cost. First, we use Qwen2-Audio-7B-Instruct in a zero-shot setting for granular MOS estimation, noticing perceptual blind spots and inherent biases. Then, we analyze SOMOS dataset and construct a diagnostic benchmark that operationalizes two prosodic dimensions associated with human naturalness ratings. Finally, we adapt Qwen2-Audio-7B-Instruct through a parameter-efficient finetuning (LoRA) on the task of MOS evaluation, observing improvements over base model and widely used neural baselines like UTMOS and establishing a practical blueprint for enterprise-grade speech quality assurance.
+ Existing phase-based backdoor attacks on speaker identification rely on shared absolute phase patterns for cross-sample trigger consistency, while other audio backdoor attacks have explored shared transformations that produce input-dependent triggers. Whether phase-based triggers can achieve similar consistency without imposing identical output phase patterns remains unclear. We propose GDBack, a poison-only group-delay backdoor attack using cascaded second-order analytic all-pass filters. Applying a shared transformation across utterances ideally preserves spectral magnitude while introducing a consistent frequency-dependent phase response and group-delay contribution, without forcing identical output phases. Experiments on LibriSpeech and VoxCeleb1 with ECAPA-TDNN, x-vector, and RawNet3 achieve attack success rates above 94% across all six settings (97.00% on average), while maintaining benign accuracy close to clean models. Phase and magnitude interventions, inverse compensation, and parameter-sensitivity analyses support the role of the induced phase transformation in backdoor activation. Speech quality and content evaluations indicate limited perceptual and linguistic distortion, while robustness experiments, including real over-the-air tests, reveal varying effectiveness across conditions and architectures. These findings demonstrate that cross-sample trigger consistency can arise from a shared phase transformation without requiring a common absolute phase pattern.
+#### High Frequency Safeguard and Weighted Objective Scoring Bandwidth Extension
+ - **Authors:** Tarikul Islam Tamiti, Sajid Fardin Dipto, Anomadarshi Barua
+ - **Subjects:** Subjects:
+Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.02235
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.02235
+
+ - **Abstract**
+ Speech Bandwidth Extension (BWE) reconstructs missing high frequencies from a band-limited signal. Please note that perceptually important information is often concentrated in short high-frequency (HF) events. Therefore, an effective BWE requires both accurate HF generation and explicit control over where, how often, and in what spectral form HF energy should be produced. To address the above HF supervision, we present HFSWO, a compact complex-spectral Swin-based dual-stream adversarial framework with two newly proposed specialized discriminators: 1. High-Frequency Safeguard Discriminator (HFSD) converts excessive framewise HF-energy ratios into a differentiable safeguard-constraint penalty optimized through a projected primal--dual augmented-Lagrangian update; 2. Weighted Objective Scoring Discriminator (WOSD) learns an interpretable convex objective scoring over spectral flatness, centroid, and rolloff. Our rigorous experiments on VCTK English and MLS French datasets across multiple frequency ranges, including noisy conditions, show significantly improved perceptual scores with 74.6% fewer parameters than the existing baseline AP-BWE, establishing a new baseline in the BWE task in multilingual and multispeaker setups.
+#### InteractionBench: Measuring Timing, Task Accuracy, Whisper and Volume, and Grounding in Real-Time Voice Systems
+ - **Authors:** Richard Yucheng He, Chen Xu, Yihang Liu, Tairan Chen, Baodong Cao
+ - **Subjects:** Subjects:
+Sound (cs.SD); Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.02430
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.02430
+
+ - **Abstract**
+ Most benchmarks for real-time voice systems focus on one aspect, such as turn-taking, instruction following, paralinguistic control, or conversational memory, each with its own data and set of systems. We present InteractionBench, a benchmark and evaluation harness that measures four dimensions on the same systems from the same recorded user audio: conversational timing, spoken-task accuracy, whisper and volume, and groundedness in conversations of more than twenty turns. The benchmark contains 221 items per system in thirteen scenarios. Before any system runs, we fix the expected floor-control actions for spoken tasks by rule and take the expected answers from scripted dialogues. We score whispering from the audio signal. We evaluate GPT-Live, GPT-Realtime, Gemini Live, Moshi, PersonaPlex, Freeze-Omni, and a turn-based cascade in 1,519 graded runs. Among the six full-duplex systems, timing and spoken-task accuracy are rank-correlated ($\rho = 0.83$), while the cascade has the highest spoken-task score (38/50) and the second-lowest timing score. No system corrects a user's grammar within the required window. Only Gemini Live whispers on most requests (8/10). Hosted systems pass 67-88% of groundedness probes, compared with 14-35% for open full-duplex models. Timing is measured where the client hears each system, so the timing of hosted systems includes network delay: for GPT-Live, whose server reports its own clock, removing a delay of about 1.5 s lowers its timing score from 86% to 56%. We also document where the protocol differs across systems, including the text instructions.
+#### ReplayFactor: Replay-Aware Dual-Attribute Learning for Practical Speech Deepfake Detection
+ - **Authors:** Miao He, Jiayi Zhou, Yu Zheng, Zhongjie Ba, Peng Cheng, Yuxi Zhou, Junjie Zhu, Changhao Zhang, Jian Liu
+ - **Subjects:** Subjects:
+Sound (cs.SD); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.02628
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.02628
+
+ - **Abstract**
+ Advances in synthesis techniques have made deepfake speech increasingly realistic, amplifying voice security threats, including unauthorized voice cloning and impersonation. Although existing deepfake detectors perform well on digitally generated speech, their performance often degrades on physically replayed deepfakes, which constitute a low-cost and practical threat to real-world systems. Existing research focuses primarily on dataset construction and evaluation, while available dataset diversity and replay-aware detector design remain limited. We propose ReplayFactor, a dual-attribute framework that enhances replay evidence by fusing self-supervised learning (SSL) representations with an acoustic prior, while leveraging multi-task learning and supervised contrastive learning to promote robust, generalizable representations. We also construct ReplayFake-CN, a large-scale, multi-device Chinese dataset comprising approximately 185k replayed synthetic utterances to complement public benchmarks. Our framework improves macro-F1 from 60.99% to 76.44% and reduces EER from 11.86% to 3.05% on the EchoFake open set over the baseline, demonstrating strong potential for practical replayed deepfake detection.
+#### Voice-Native LLMs Hear Frustration but Do Not Listen to It
+ - **Authors:** Hanjun Luo, Yuhan Lu, Hanan Salam
+ - **Subjects:** Subjects:
+Sound (cs.SD); Artificial Intelligence (cs.AI); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.02893
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.02893
+
+ - **Abstract**
+ Users convey frustration in what they say and in how they say it, and voice-native models, which hear speech instead of an ASR transcript, can register both. Existing evaluations read unchanged performance as robustness without checking perception. Following Brunswik's lens model, we measure on identical audio whether frustration is expressed, perceived, and utilized. We cross frustrated wording with frustrated voice in a within-item 2x2 design over 353 tasks and release the 1,412 clips as VoxAffect. Across 8 models, outputs look robust, with no detectable vocal effect on accuracy for 7. With neutral wording, all 8 label the frustrated voice frustrated in at most 3.1% of clips, although 7 of them detect acted anger in 73-100% of clips and human listeners classify the voice correctly in 65.3% of judgments. Yet linear probes decode the frustrated voice from the audio encoders of the 2 open-weight models, with paired accuracy 0.67 and 0.69, and in proprietary models too the voice raises perceived frustration once the words agree. The models thus hear the frustrated voice but do not listen to it, whereas their invariance to frustrated wording, perceived in 40-75% of clips, is genuine robustness. Our work is openly accessible at this https URL.
+#### ufakzeka-kulak: Building and Evaluating a 31.6M-Parameter Turkish Speech Recognizer from Scratch
+ - **Authors:** Sait Furkan Teke (ufak AI)
+ - **Subjects:** Subjects:
+Computation and Language (cs.CL); Audio and Speech Processing (eess.AS)
+ - **Arxiv link:** https://arxiv.org/abs/2611.03605
+
+ - **Pdf link:** https://arxiv.org/pdf/2611.03605
+
+ - **Abstract**
+ ufakzeka-kulak is an open Turkish speech-to-text model of 31.6M parameters, a FastConformer encoder with a token-and-duration transducer (TDT) and a CTC head, trained from scratch and released under Apache-2.0. It writes cased, punctuated Turkish with numbers as words. Its 4,977 training hours come from sources whose licences allow commercial use; 281 hours are human-transcribed, and for the other 4,696 the training text is an uploader subtitle or a machine transcript, kept only where a second, independent reading of the audio agrees with it. The recipe, checkpoint, labelling and export choices were made on development data, and the test sets were scored once, in a release gate fixed before training. With greedy TDT decoding the normalised word error rate (WER) is 0.0921 (95 percent interval 0.0792 to 0.1055) on FLEURS Turkish test and 0.0916 (0.0873 to 0.0958) on Common Voice 27.0 Turkish test, lower than Whisper base and Whisper small on both sets with paired intervals wholly below zero; Whisper large-v3 (greedy) scores 0.0604 and 0.0767. On conversational speech the WER is 0.3807. We also report punctuation and casing, degraded audio, and how closely each shipped export reproduces the trained model.
 
 
 by Zyzzyva0381 (Windy). 
 
 
-2026-11-02
+2026-11-03
